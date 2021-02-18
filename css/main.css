@@ -2215,6 +2215,23 @@ body.menu-is-open {
   position: relative;
 }
 
+.btn--primary {
+  background-image: linear-gradient(to right, #000046 0%, #1CB5E0  51%, #000046  100%)
+}
+.btn--primary {
+text-transform: uppercase;
+transition: 0.5s;
+background-size: 200% auto;
+color: white;            
+display: block;
+}
+
+.btn--primary:hover {
+background-position: right center; /* change the direction of the change here */
+color: #fff;
+text-decoration: none;
+}
+
 .home-content__button .btn {
   width: 30rem;
   height: 7.2rem !important;
@@ -3866,8 +3883,30 @@ footer a {
   display: none;
 }
 
+.button {
+  background-image: linear-gradient(to right, #000046 0%, #1CB5E0  51%, #000046  100%)
+}
+.button {
+/* margin: 10px;
+padding: 15px 45px;
+text-align: center; */
+text-transform: uppercase;
+transition: 0.5s;
+background-size: 200% auto;
+color: white;            
+
+/* border-radius: 10px; */
+display: block;
+}
+
+.button:hover {
+background-position: right center; /* change the direction of the change here */
+color: #fff;
+text-decoration: none;
+}
+
 .ss-go-top a {
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: #a4b6df;
   text-align: center;
   font-family: "Montserrat", sans-serif;
