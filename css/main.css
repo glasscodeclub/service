@@ -58,7 +58,7 @@
  * # base style overrides
  *
  * ------------------------------------------------------------------- */
-html {
+ html {
   font-size: 10px;
 }
 
@@ -1727,7 +1727,7 @@ body.menu-is-open {
   position: relative;
 }
 
-.header-nav h3::after {
+/* .header-nav h3::after {
   content: "";
   display: block;
   height: 1px;
@@ -1736,7 +1736,7 @@ body.menu-is-open {
   position: absolute;
   top: 50%;
   right: 0;
-}
+} */
 
 .header-nav p {
   margin-bottom: 2.7rem;
@@ -1759,12 +1759,13 @@ body.menu-is-open {
 .header-nav__list {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
-  font-size: 2.8rem;
+  font-size: 4rem;
   line-height: 1.286;
   margin: 0 0 4.2rem 0;
   padding: 0;
+  margin-top: 100px;
   list-style: none;
-  counter-reset: ctr;
+  /* counter-reset: ctr; */
 }
 
 .header-nav__list li {
@@ -1779,8 +1780,8 @@ body.menu-is-open {
 
 .header-nav__list a::before {
   display: block;
-  content: counter(ctr, decimal-leading-zero) ".";
-  counter-increment: ctr;
+  /* content: counter(ctr, decimal-leading-zero) ".";
+  counter-increment: ctr; */
   font-family: "Montserrat", sans-serif;
   font-size: 11px;
   color: rgba(255, 255, 255, 0.25);
@@ -1791,6 +1792,10 @@ body.menu-is-open {
 
 .header-nav__list a:hover::before {
   color: #42d2f7;
+}
+
+.header-nav__list a:hover {
+  text-decoration: underline;
 }
 
 .header-nav__list .current a::before {
