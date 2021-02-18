@@ -2033,8 +2033,8 @@ body.menu-is-open {
   }
 
   .header-logo img {
-    width: 150px;
-    height: 35px;
+    width: 65px;
+    height: 66px;
     /* transition: ease 1s; */
   }
 
@@ -2043,7 +2043,7 @@ body.menu-is-open {
   } */
 
   .header-nav {
-    width: calc(100% - 40px);
+    width: calc(80% - 40px);
   }
 
   .header-nav h3 {
@@ -2051,7 +2051,7 @@ body.menu-is-open {
   }
 
   .header-nav__list {
-    font-size: 2.2rem;
+    font-size: 40px;
   }
 
   .header-menu-toggle {
@@ -2060,7 +2060,7 @@ body.menu-is-open {
   }
 
   .header-nav__social {
-    font-size: 2.2rem;
+    font-size: 40px;
   }
 
 }
