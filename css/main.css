@@ -77,7 +77,7 @@ body {
 body {
   background: #121212;
   font-family: "Nunito Sans", sans-serif;
-  font-size: 1.89rem;
+  font-size: 1.7rem;
   font-style: normal;
   font-weight: normal;
   line-height: 1.941;
@@ -1676,6 +1676,7 @@ body.menu-is-open {
   margin-top: 34px;
 }
 
+
 /* ------------------------------------------------------------------- 
  * ## main navigation 
  * ------------------------------------------------------------------- */
@@ -1831,7 +1832,7 @@ body.menu-is-open {
 }
 .header-nav li a:hover,
 .header-nav li a:focus {
-  color: #42d2f7;
+  color: #2c8dce;
   transition: top ease 0.8s;
   top: -3px;
 }
@@ -1954,6 +1955,9 @@ body.menu-is-open {
   bottom: -9px;
 }
 
+.header-logo img:hover{
+  transform: translateY(-2px);
+}
 /* ------------------------------------------------------------------- 
  * responsive:
  * header
@@ -2293,7 +2297,7 @@ text-decoration: none;
 
 .home-content__scroll .scroll-link:hover,
 .home-content__scroll .scroll-link:focus {
-  color: #42d2f7;
+  color: #2c8dce;
 }
 
 .home-content__scroll::after {
@@ -2785,15 +2789,15 @@ html.no-csstransitions .home-content__main {
 }
 
 .process h4::before {
-  /* content: counter(ctr);
-  counter-increment: ctr; */
+  content: counter(ctr);
+  counter-increment: ctr;
   display: block;
   font-family: "Montserrat", sans-serif;
   font-size: 2.1rem;
   font-weight: 700;
   text-align: center;
   color: #FFFFFF;
-  background-color: #1CB5E0;
+  background-color: #2c8dce;
   height: 48px;
   width: 48px;
   line-height: 48px;
