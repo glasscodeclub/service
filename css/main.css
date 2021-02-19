@@ -77,7 +77,7 @@ body {
 body {
   background: #121212;
   font-family: "Nunito Sans", sans-serif;
-  font-size: 1.7rem;
+  font-size: 1.89rem;
   font-style: normal;
   font-weight: normal;
   line-height: 1.941;
@@ -1430,11 +1430,11 @@ body.menu-is-open {
 .subhead {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
-  font-size: 1.8rem;
+  font-size: 2.0rem;
   line-height: 1.333;
   text-transform: uppercase;
   letter-spacing: .25rem;
-  color: #42d2f7;
+  color: #2c8dce;
   margin-top: 0;
   margin-bottom: 3rem;
   position: relative;
@@ -2785,8 +2785,8 @@ html.no-csstransitions .home-content__main {
 }
 
 .process h4::before {
-  content: counter(ctr);
-  counter-increment: ctr;
+  /* content: counter(ctr);
+  counter-increment: ctr; */
   display: block;
   font-family: "Montserrat", sans-serif;
   font-size: 2.1rem;
@@ -2929,7 +2929,7 @@ html.no-csstransitions .home-content__main {
 
 .item-service__icon {
   float: left;
-  color: #45d1e4;
+  color: #2c8dce;
   font-size: 4.5rem;
   margin-top: -1.8rem;
 }
