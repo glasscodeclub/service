@@ -90,7 +90,7 @@ body {
  * ## links
  * ------------------------------------------------------------------- */
 a {
-  color: #793ea5;
+  color: #fff;
   -webkit-transition: all 0.1s ease-out;
   transition: all 0.1s ease-out;
 }
@@ -192,6 +192,26 @@ p.lead {
   line-height: 1.625;
   margin-bottom: 3.6rem;
   color: rgba(255, 255, 255, 0.2);
+}
+
+.hvr-grow-shadow{
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform;
+}
+.hvr-grow-shadow:hover, .hvr-grow-shadow:focus, .hvr-grow-shadow:active {
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 @media only screen and (max-width:1200px) {
@@ -353,6 +373,28 @@ hr {
   margin: 2.4rem 0 1.5rem;
   height: 0;
 }
+
+.underlined {
+  flex: 1;
+  /* font-size: 2em;
+  line-height: 1.2; */
+  text-decoration: none;
+  background-image: linear-gradient(to right, #1CB5E0 0%, #1CB5E0  51%, #1CB5E0  100%);
+  background-position: 0 1.2em;
+  background-size: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-color .5s;
+}
+
+.underlined:hover{
+ background-size: 100% 100%;
+}
+
+.underlined--offset {
+  background-position: 0 0.2em;
+  box-shadow: inset 0 -.5em 0 0 #121212;
+}
+
 
 /* ------------------------------------------------------------------- 
  * ## Lists
@@ -1809,10 +1851,6 @@ body.menu-is-open {
   color: #42d2f7;
 }
 
-.header-nav__list a:hover {
-  text-decoration: underline;
-}
-
 .header-nav__list .current a::before {
   color: #42d2f7;
 }
@@ -2803,8 +2841,8 @@ html.no-csstransitions .home-content__main {
 }
 
 .process h4::before {
-  content: counter(ctr);
-  counter-increment: ctr;
+  /* content: counter(ctr);
+  counter-increment: ctr; */
   display: block;
   font-family: "Montserrat", sans-serif;
   font-size: 2.1rem;
