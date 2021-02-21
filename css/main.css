@@ -77,9 +77,9 @@ body {
 body {
   background: #121212;
   font-family: "Nunito Sans", sans-serif;
-  font-size: 1.7rem;
+  font-size: 1.9rem;
   font-style: normal;
-  font-weight: normal;
+  font-weight: bold;
   line-height: 1.941;
   color: rgba(255, 255, 255, 0.3);
   margin: 0;
@@ -1427,6 +1427,10 @@ body.menu-is-open {
   margin-bottom: 4.8rem;
 }
 
+.display-1:hover{
+  transform: translateY(-7px);
+}
+
 .subhead {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
@@ -1438,6 +1442,10 @@ body.menu-is-open {
   margin-top: 0;
   margin-bottom: 3rem;
   position: relative;
+}
+
+.subhead:hover{
+  transform: translateY(-7px);
 }
 
 .item-title {
@@ -1620,6 +1628,10 @@ body.menu-is-open {
 
   .item-title {
     font-size: 2.1rem;
+  }
+
+  .item-title :hover{
+    transform: translateY(-7px);
   }
 
   .grid-overlay > div,
@@ -1956,7 +1968,9 @@ body.menu-is-open {
 }
 
 .header-logo img:hover{
-  transform: translateY(-2px);
+  transform: translateY(-3px);
+  /* -webkit-transform: translateY(-2px);
+  -ms-transform:     translateY(-2px); */
 }
 /* ------------------------------------------------------------------- 
  * responsive:
@@ -2807,6 +2821,7 @@ html.no-csstransitions .home-content__main {
   top: -5px;
 }
 
+
 .item-process {
   position: relative;
   min-height: 24.6rem;
@@ -2938,6 +2953,10 @@ html.no-csstransitions .home-content__main {
   margin-top: -1.8rem;
 }
 
+.item-service__icon:hover{
+  transform: translateY(-7px);
+}
+
 /* ------------------------------------------------------------------- 
  * responsive:
  * services
@@ -2996,7 +3015,7 @@ html.no-csstransitions .home-content__main {
 
   .services .service-icon {
     font-size: 4.2rem;
-    float: none;
+    float:none;
     margin-top: 0;
   }
 
