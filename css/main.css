@@ -199,7 +199,7 @@ p.lead {
   vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(243, 243, 243, 0.795);
+  box-shadow: 0 0 1px rgba(17, 17, 17, 0);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
@@ -209,7 +209,7 @@ p.lead {
   transition-property: box-shadow, transform;
 }
 .hvr-grow-shadow:hover, .hvr-grow-shadow:focus, .hvr-grow-shadow:active {
-  box-shadow: 10px 10px 5px rgba(243, 243, 243, 0.795);
+  box-shadow: 10px 10px 5px rgba(17, 17, 17, 0);
   -webkit-transform: scale(1.03);
   transform: scale(1.03);
 }
