@@ -48,7 +48,7 @@
     <header class="s-header">
                   
         <div class="header-logo">
-            <a class="site-logo hvr-grow-shadow" href="index.html">
+            <a class="site-logo" href="index.html">
                 
                 <img src="images/icons/GC_logo.png" alt="Homepage">
             </a>
@@ -75,16 +75,16 @@
     
                 <ul class="header-nav__social">
                     <li>
-                        <a href="https://www.facebook.com/glasscodeclubSAH"><i class="fab fa-facebook hvr-grow-shadow"></i></a>
+                        <a href="https://www.facebook.com/glasscodeclubSAH"><i class="fab fa-facebook"></i></a>
                     </li>
                     <li>
-                        <a href="https://www.linkedin.com/in/glasscode-club-633645202?"><i class="fab fa-linkedin hvr-grow-shadow"></i></a>
+                        <a href="https://www.linkedin.com/in/glasscode-club-633645202?"><i class="fab fa-linkedin"></i></a>
                     </li>
                     <li>
-                        <a href="https://www.instagram.com/glass_code/ "><i class="fab fa-instagram hvr-grow-shadow"></i></a>
+                        <a href="https://www.instagram.com/glass_code/ "><i class="fab fa-instagram"></i></a>
                     </li>
                     <li>
-                        <a href="https://github.com/glasscodeclub"><i class="fab fa-github hvr-grow-shadow"></i></a>
+                        <a href="https://github.com/glasscodeclub"><i class="fab fa-github"></i></a>
                     </li>
                 </ul>
 
@@ -92,7 +92,7 @@
 
         </nav> <!-- end header-nav -->
 
-        <a class="header-menu-toggle hvr-grow-shadow" href="#0">
+        <a class="header-menu-toggle" href="#0">
             <span class="header-menu-icon"></span>
         </a>
 
@@ -110,118 +110,91 @@
                 <h1 class="block-effect" style="--td: 1.2s">
                     <style>
                         /* reset */
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+                        *,
+                        *::before,
+                        *::after {
+                            margin: 0;
+                            padding: 0;
+                            box-sizing: border-box;
+                        }
 
-/* other */
-.info {
-  margin: 20px 0;
-  text-align: center;
-}
-
-/* block-$ */
-.block-effect {
-  font-size: calc(8px + 6vw);
-}
-
-.block-reveal {
-  --t: calc(var(--td) + var(--d));
-
-  color: transparent;
-  padding: 4px;
-
-  position: relative;
-  overflow: hidden;
-
-  animation: revealBlock 0s var(--t) forwards;
-}
-
-.sub{
-    font-size: 4.0rem; 
-    line-height: 2.342; 
-    text-align:center;
-    /* color: darkgray; */
-}
-
-.block-reveal:hover{
-    transform: translateY(-7px);
-}
-
-.block-reveal::after {
-  content: '';
-
-  width: 9rem;
-  height: 9rem;
-  padding-bottom: 4px;
-
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  background: var(--bc);
-  animation: revealingIn var(--td) var(--d) forwards, revealingOut var(--td) var(--t) forwards;
-}
-
-
-/* animations */
-@keyframes revealBlock {
-  100% {
-    color: #ffffff;
-  }
-}
-
-@keyframes revealingIn {
-
-  0% {
-    width: 0;
-  }
-
-  100% {
-    width: 100%;
-  }
-}
-
-@keyframes revealingOut {
-
-  0% {
-    transform: translateX(0);
-  }
-
-  100% {
-    transform: translateX(100%);
-  }
-
-}
-</style>
-
-                    <div class="block-reveal hvr-grow-shadow" 
-                    style="--bc: linear-gradient(to right, #000046 0%, #1CB5E0  51%, #000046  100%); --d: .1s;font-size: 9rem; font-family: tahoma;">
-                    GlassCode Club</div>
-                    <div class="block-reveal sub" style="--bc: #2993a1; --d: .5s; font-family: roboto;">
-                        <style>
-                        .block-effect {
-                        animation-duration: 3s;
-                        animation-name: slidein;
-                        animation-iteration-count: initial;}
-                            @keyframes slidein {
-                                from {
-                                    margin-left: 100%;
-                                    width: 300%;
-                                }
-
-                                to {
-                                    margin-left: 0%;
-                                    width: 100%;
-                                }
+                        /* other */
+                        .info {
+                            margin: 20px 0;
+                            text-align: center;
                             }
-                        </style>
-                        We provide web development services to boost your business</div>
-                  </h1>
+
+                        /* block-$ */
+                        .block-effect {
+                            font-size: calc(8px + 6vw);
+                            }
+
+                        .block-reveal {
+                            --t: calc(var(--td) + var(--d));
+                            color: transparent;
+                            padding: 4px;
+                            position: relative;
+                            overflow: hidden;
+                            animation: revealBlock 0s var(--t) forwards;
+                            }
+                            .sub{
+                                font-size: 4.0rem; 
+                                line-height: 2.342; 
+                                text-align:center;
+                                }
+                                .block-reveal:hover{
+                                    transform: translateY(-7px);
+                                    }
+                                    .block-reveal::after {
+                                        content: '';
+                                        width: 9rem;
+                                        height: 9rem;
+                                        padding-bottom: 4px;
+                                        position: absolute;
+                                        top: 0;
+                                        left: 0;
+                                        background: var(--bc);
+                                        animation: revealingIn var(--td) var(--d) forwards, revealingOut var(--td) var(--t) forwards;}
+                                        /* animations */
+                                        @keyframes revealBlock {
+                                            100% {
+                                                color: #ffffff;
+                                                }
+                                                }
+                                                @keyframes revealingIn {
+                                                    0% {
+                                                        width: 0;
+                                                        }
+                                                        100% {
+                                                            width: 100%;
+                                                            }}
+                                                            @keyframes revealingOut {
+                                                                0% {
+                                                                    transform: translateX(0);
+                                                                    }
+                                                                    100% {
+                                                                        transform: translateX(100%);
+                                                                        }}
+                                                                        </style>
+                                                                        <div class="block-reveal" style="--bc: linear-gradient(to right, #000046 0%, #1CB5E0  51%, #000046  100%); --d: .1s;font-size: 9rem; font-family: tahoma;">GlassCode Club</div>
+                                                                        <div class="block-reveal sub" style="--bc: #2993a1; --d: .5s; font-family: roboto;">
+                                                                        <style>
+                                                                        .block-effect {
+                                                                            animation-duration: 3s;
+                                                                            animation-name: slidein;
+                                                                            animation-iteration-count: initial;}
+                                                                        @keyframes slidein {
+                                                                            from {
+                                                                                margin-left: 100%;
+                                                                                width: 300%;
+                                                                            }
+
+                                                                            to {
+                                                                                margin-left: 0%;
+                                                                                width: 100%;
+                                                                                }}
+                                                                                </style>
+                                                                                We provide web development services to boost your business</div></h1>
 
                 <!-- <div class="home-content__video">
                     <a class="video-link" href="https://player.vimeo.com/video/117310401?color=01aef0&title=0&byline=0&portrait=0" data-lity>
@@ -235,7 +208,6 @@
                         More About Us
                     </a>
                     <a href="#contact" class="smoothscroll btn btn--large button hvr-grow-shadow" style="font-family: roboto; font-size: small;">
-                        
                         Contact us
                     </a>
                 </div>
@@ -254,16 +226,16 @@
 
         <ul class="home-social">
             <li>
-                <a href="https://www.facebook.com/glasscodeclubSAH"><i class="fab fa-facebook-f hvr-grow-shadow" aria-hidden="true"></i><span>Facebook</span></a>
+                <a href="https://www.facebook.com/glasscodeclubSAH"><i class="fab fa-facebook-f" aria-hidden="true"></i><span>Facebook</span></a>
             </li>
             <li>
-                <a href="https://github.com/glasscodeclub"><i class="fab fa-github hvr-grow-shadow" aria-hidden="true"></i><span>Github</span></a>
+                <a href="https://github.com/glasscodeclub"><i class="fab fa-github" aria-hidden="true"></i><span>Github</span></a>
             </li>
             <li>
-                <a href="https://www.instagram.com/glass_code/"><i class="fab fa-instagram hvr-grow-shadow" aria-hidden="true"></i><span>Instagram</span></a>
+                <a href="https://www.instagram.com/glass_code/"><i class="fab fa-instagram" aria-hidden="true"></i><span>Instagram</span></a>
             </li>
             <li>
-                <a href="https://www.linkedin.com/in/glasscode-club-633645202?"><i class="fab fa-linkedin hvr-grow-shadow" aria-hidden="true"></i><span>LinkedIn</span></a>
+                <a href="https://www.linkedin.com/in/glasscode-club-633645202?"><i class="fab fa-linkedin" aria-hidden="true"></i><span>LinkedIn</span></a>
             </li>
         </ul> 
         <!-- end home-social -->
@@ -278,7 +250,7 @@
 
         <div class="row section-header bit-narrow" data-aos="fade-up">
             <div class="col-full">
-                <h3 class="subhead" style="font-family: montserrat;"> Who We Are</h3>
+                <h3 class="subhead" style="font-family: montserrat;"> Who We Are</h3></br>
                 <p class="display-1"><a class= "underlined underlined--offset" style="text-align: justify; font-family: nunito sans;">
                     We are GlassCode Club, a design and development team. We design thoughtful digital experiences, 
                     build beautiful brand aesthetics. Everything from business-ready custom websites to rich interactive 
@@ -306,7 +278,7 @@
                 
             <div class="about-process process block-1-2 block-tab-full">
 
-                <div class="col-block item-process hvr-grow-shadow" data-aos="fade-up">
+                <div class="col-block item-process" data-aos="fade-up">
                     <div class="item-service__icon">
                         <img src="images/icons/edit-9-48.png" alt="Define">
                     </div>
@@ -319,7 +291,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-block item-process hvr-grow-shadow" data-aos="fade-up">
+                <div class="col-block item-process" data-aos="fade-up">
                     <div class="item-service__icon">
                         <img src="images/icons/picture-48.png" alt="design">
                     </div>
@@ -335,7 +307,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-block item-process hvr-grow-shadow" data-aos="fade-up">
+                <div class="col-block item-process" data-aos="fade-up">
                     <div class="item-service__icon">
                         <img src="images/icons/icons8-full-tool-storage-box-50.png" alt="build">
                     </div>
@@ -351,7 +323,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-block item-process hvr-grow-shadow" data-aos="fade-up">
+                <div class="col-block item-process" data-aos="fade-up">
                     <div class="item-service__icon">
                         <img src="images/icons/rocket-48.png" alt="launch">
                     </div>
@@ -383,10 +355,69 @@
         <div class="row section-header bit-narrow" data-aos="fade-up">
             <div class="col-full">
                 <h3 class="subhead" style="font-family: montserrat; text-align: justify;">What we do</h3>
-                <p class="display-1" style="font-family: nunito sans;"><a class= "underlined underlined--offset">
-                    We take pride in what we do. Our expertise with the latest tools and techniques helps you to take your 
-                    business to the next level!</a>
-                </p>
+                <h1 class='heads' data-shadow=' We take pride in what we do. Our expertise with the latest tools and techniques 
+                helps you to take your business to the next level!' style="font-family: nunito sans; padding: 5.5px;"> 
+                We take pride in what we do. Our expertise with the latest tools and techniques helps you to take your 
+                business to the next level!
+                <style>
+                    @import url(https://fonts.googleapis.com/css?family=Roboto);
+
+                *, *:before, *:after {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                position: relative;
+                }
+
+/* html, body {
+  height: 100%;
+  } */
+  /* body {
+    text-align: center;
+    background-color: hsla(230,40%,50%,1);
+    } */
+  /* body:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0;
+    height: 100%;
+    } */
+
+                .heads {
+                display: inline-block;
+                color: white;
+                font-family: 'Roboto', serif;
+                font-size: 4.6rem; 
+                text-shadow: .03em .03em 0 hsla(230,40%,50%,1);
+                }
+                .heads:after {
+                content: attr(data-shadow);
+                position: absolute;
+                top: .06em; left: .06em;
+                z-index: -1;
+                text-shadow: none;
+                background-image:
+                linear-gradient(
+                    45deg,
+                    transparent 45%,
+                  hsla(48,20%,90%,1) 45%,
+                  hsla(48,20%,90%,1) 55%,
+                    transparent 0
+                    );
+                background-size: .05em .05em;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                animation: shad-anim 15s linear infinite;
+                }
+
+                @keyframes shad-anim {
+                0% {background-position: 0 0}
+                0% {background-position: 100% -100%}
+                }
+                </style>
+            </h1>
+                
             </div>
         </div> 
         <!-- end section-header -->
@@ -397,7 +428,7 @@
                 <div class="item-service__icon">
                     <i class="icon-star"></i>
                 </div>
-                <div class="item-service__text hvr-grow-shadow">
+                <div class="item-service__text paragraph">
                     <h3 class="item-title" style="font-family: montserrat;">Brand Identity</h3>
                     <p style="text-align: justify; font-family: roboto; color:darkgrey;">
                         Your brand is the identity of your business trying to communicate with your customers. 
@@ -411,7 +442,7 @@
                 <div class="item-service__icon">
                     <i class="icon-group"></i>
                 </div>
-                <div class="item-service__text hvr-grow-shadow">
+                <div class="item-service__text paragraph">
                     <h3 class="item-title" style="font-family: montserrat;">Illustration</h3>
                     <p style="text-align: justify; font-family: roboto; color:darkgrey;">
                         We make beautiful and intriguing illustrations ensuring that the facts, data and the images 
@@ -424,7 +455,7 @@
                 <div class="item-service__icon">
                     <i class="icon-pie-chart"></i>
                 </div>  
-                <div class="item-service__text hvr-grow-shadow">
+                <div class="item-service__text paragraph">
                     <h3 class="item-title" style="font-family: montserrat;">Marketing</h3>
                     <p style="text-align: justify; font-family: roboto; color:darkgrey;">
                         With the help of our digital marketing and online marketing services for your business, 
@@ -439,7 +470,7 @@
                 <div class="item-service__icon">
                     <i class="icon-desktop"></i>
                 </div>
-                <div class="item-service__text hvr-grow-shadow">
+                <div class="item-service__text paragraph">
                     <h3 class="item-title" style="font-family: montserrat;">Web Development</h3>
                     <p style="text-align: justify; font-family: roboto; color:darkgrey;">
                         Our web development team not only focuses on the visual effects of the website, but also take other factors
@@ -454,7 +485,7 @@
                 <div class="item-service__icon">
                     <i class="icon-cube"></i>
                 </div>
-                <div class="item-service__text hvr-grow-shadow">
+                <div class="item-service__text paragraph">
                     <h3 class="item-title" style="font-family: montserrat;">UI/UX Design</h3>
                     <p style="text-align: justify; font-family: roboto; color:darkgrey;">
                         The finalization of the UX design happens only when you go through the wireframes of the product, 
@@ -467,8 +498,9 @@
             </div>
     
             <div class="col-block item-service" data-aos="fade-up">
-                <div class="item-service__icon"><i class="icon-lego-block"></i></div>
-                <div class="item-service__text hvr-grow-shadow">
+                <div class="item-service__icon"><i class="icon-lego-block"></i>
+                </div>
+                <div class="item-service__text paragraph">
                     <h3 class="item-title" style="font-family: montserrat;">Frontend Design</h3>
                     <p style="text-align: justify; font-family: roboto; color:darkgrey;">
                         We not only focus on the correct layout of the website, but also the 
@@ -493,11 +525,64 @@
         <div class="row section-header has-bottom-sep narrow target-section" data-aos="fade-up">
             <div class="col-full">
                 <h3 class="subhead" style="font-family: montserrat; text-align: center;">Our Works</h3>
-                <p class="display-1" style="font-family: nunito sans;"><a class= "underlined underlined--offset">
-                    We create brands, products, and experiences that people love. Check out our recent works.</a>
-                </p>
-            </div>
-        </div> 
+                <h1 class='sub-head' style="font-family: nunito sans;"> 
+                <style>
+                    @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+                    .sub-head {
+                        font-size: 4.6rem;
+                        text-shadow: 0 0 5px #1CB5E0, 0 0 15px #1CB5E0, 0 0 20px #1CB5E0, 0 0 40px #1CB5E0, 0 0 60px #000046, 0 0 10px #1CB5E0, 0 0 98px #000046;
+                        color: #fff6a9;
+                        text-align: center;
+                        animation: blink 3s infinite;
+                        -webkit-animation: blink 3s infinite;
+                    }
+
+                    @-webkit-keyframes blink {
+                        20%,
+                        24%,
+                        55% {
+                        color: #111;
+                        text-shadow: none;
+                    }
+
+                    0%,
+                    19%,
+                    21%,
+                    23%,
+                    25%,
+                    54%,
+                    56%,
+                    100% {
+                        text-shadow: 0 0 5px #1CB5E0, 0 0 15px #1CB5E0, 0 0 20px , 0 0 40px #1CB5E0, 0 0 60px #000046, 0 0 10px #1CB5E0, 0 0 98px #000046;
+                        color: #fff6a9;
+                    }
+                    }
+
+                    @keyframes blink {
+                    20%,
+                    24%,
+                    55% {
+                    color: #111;
+                    text-shadow: none;
+                    }
+
+                    0%,
+                    19%,
+                    21%,
+                    23%,
+                    25%,
+                    54%,
+                    56%,
+                    100% {
+                        text-shadow: 0 0 5px #1CB5E0, 0 0 15px #1CB5E0, 0 0 20px #1CB5E0, 0 0 40px #1CB5E0, 0 0 60px #000046, 0 0 10px #1CB5E0, 0 0 98px #000046;
+                        color: #fff6a9;
+                    }
+                    }
+                    </style>
+                    We create brands, products, and experiences that people love. Check out our recent works.</h1> 
+                </div>
+            </div> 
         <!-- end section-header -->
 
         <div class="row masonry-wrap">
@@ -793,10 +878,6 @@
     ================================================== -->
     <section id="contact" class="s-contact target-section">
 
-            <!-- <div class="grid-overlay">
-                <div></div>
-            </div> -->
-
         <div class="row section-header narrow" data-aos="fade-up">
             <div class="col-full">
                 <h3 class="subhead" style="font-family: Roboto;">Stay In Touch</h3>
@@ -856,29 +937,6 @@
 
         <div class="ss-go-top">
             <a class="smoothscroll button" title="Back to Top" href="#top">
-                <!-- <style>
-                    .button {
-                        background-image: linear-gradient(to right, #000046 0%, #1CB5E0  51%, #000046  100%)
-                    }
-                    .button {
-                     /* margin: 10px;
-                     padding: 15px 45px;
-                     text-align: center; */
-                     text-transform: uppercase;
-                     transition: 0.5s;
-                     background-size: 200% auto;
-                     color: white;            
-
-                     /* border-radius: 10px; */
-                     display: block;
-                    }
-
-                    .button:hover {
-                    background-position: right center; /* change the direction of the change here */
-                    color: #fff;
-                    text-decoration: none;
-                    }
-                </style> -->
                 Back to Top</a>
         </div>
     </footer>
