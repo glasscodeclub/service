@@ -1933,8 +1933,8 @@ body.menu-is-open {
 .header-nav__close {
   z-index: 601;
   display: block;
-  height: 30px;
-  width: 30px;
+  height: 80px;
+  width: 40px;
   position: absolute;
   top: 39px;
   right: 30px;
