@@ -1770,7 +1770,7 @@ body.menu-is-open {
 .header-logo img {
   width: 60px;
   height: 60px;
-  margin-top: 34px;
+  margin-top: 49px;
 }
 
 
@@ -2082,7 +2082,7 @@ body.menu-is-open {
   }
 
   .header-nav__list {
-    font-size: 2.5rem;
+    font-size: 5rem;
   }
 
   .header-nav__list li {
