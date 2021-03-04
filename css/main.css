@@ -1,6 +1,7 @@
-.item-service__icon{
-
-  display:flex;
+@media screen and (min-device-width: 400px) and (max-device-width: 1600px){
+  .contact-email a {
+      font-size: 5.5rem !important; 
+  }
 }
 /* =================================================================== 
  *
@@ -168,6 +169,16 @@ h3, .h3 {
   line-height: 1.25;
 }
 
+/* .item-service__text{
+
+  margin-top:5rem;
+} */
+
+.item-service__text.paragraph{
+
+  margin-bottom:20px !important;
+}
+
 h4, .h4 {
   font-size: 2.1rem;
   line-height: 1.286;
@@ -196,6 +207,68 @@ p.lead {
   line-height: 1.625;
   margin-bottom: 3.6rem;
   color: rgba(255, 255, 255, 0.2);
+}
+
+@font-face {
+  font-family: "nunito sans";
+}
+.division {
+  text-align: justify;
+ 
+}
+
+.division .lead {
+  color: #fff;
+  font-size: 2.4rem;
+  font-family: "nunito sans";
+  background: linear-gradient(to right, #fff 0%, rgb(94, 92, 92) 51%, darkgrey 100%);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 1.5s linear infinite;
+  display: inline-block;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.info{
+  position: relative;
+ 
+  /* letter-spacing: 6px; */
+  font-size: 2.2rem;
+  
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  background-size: 120% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -ms-background-clip: text;
+  -ms-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  background-image: linear-gradient(to right, #fff 0%, grey 51%, darkgrey 100%);
+  animation: .8s shake infinite alternate;
+}
+
+@keyframes shake {
+  0% { transform: skewX(-5deg); }
+  5% { transform: skewX(5deg); }
+  10% { transform: skewX(-5deg); }
+  15% { transform: skewX(5deg); }
+  20% { transform: skewX(0deg); }
+  100% { transform: skewX(0deg); }  
 }
 
 .hvr-grow-shadow{
@@ -1540,6 +1613,10 @@ body.menu-is-open {
   margin-bottom: 2.4rem;
 }
 
+.item-service__icon{
+
+  display:flex;
+}
 /* ------------------------------------------------------------------- 
  * ## section header
  * ------------------------------------------------------------------- */
@@ -1768,8 +1845,8 @@ body.menu-is-open {
 }
 
 .header-logo img {
-  width: 60px;
-  height: 60px;
+  width: 85px;
+  height: 85px;
   margin-top: 49px;
 }
 
@@ -1997,12 +2074,12 @@ body.menu-is-open {
  * ## mobile menu toggle 
  * ------------------------------------------------------------------- */
 .header-menu-toggle {
-  width: 48px;
+  width: 63px;
   height: 45px;
   line-height: 45px;
   font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  font-size: 13px;
+  font-weight: 800;
+  font-size: 20px;
   text-transform: uppercase;
   letter-spacing: .5rem;
   color: #FFFFFF;
@@ -2019,8 +2096,8 @@ body.menu-is-open {
 
 .header-menu-icon {
   display: block;
-  width: 26px;
-  height: 2px;
+  width: 42px;
+  height: 4px;
   margin-top: -1px;
   right: auto;
   bottom: auto;
@@ -2382,7 +2459,7 @@ text-decoration: none;
 .home-content__scroll .scroll-link {
   font-family: "Nunito Sans", sans-serif;
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
   letter-spacing: .35rem;
   text-align: left;
@@ -2447,7 +2524,7 @@ text-decoration: none;
 
 .home-social i {
   display: inline-block;
-  font-size: 15px;
+  font-size: 25px;
   text-align: center;
   vertical-align: middle;
   width: 30px;
@@ -2583,6 +2660,10 @@ html.no-csstransitions .home-content__main {
 
 }
 
+.item-service__text.paragraph.customer {
+  height: 515px;
+}
+
 /* ------------------------------------------------------------------- 
  * responsive:
  * home
@@ -2602,6 +2683,7 @@ html.no-csstransitions .home-content__main {
   .home-content h1 {
     font-size: 16rem;
   }
+
 
   .home-content h3 {
     font-size: 3.6rem;
@@ -2664,7 +2746,7 @@ html.no-csstransitions .home-content__main {
   }
 
   .home-content__scroll .scroll-link {
-    font-size: 1.1rem;
+    font-size: 1.9rem;
   }
 
   .home-social {
@@ -2705,9 +2787,7 @@ html.no-csstransitions .home-content__main {
     font-size: 2.7rem;
   }
 
-  .home-social {
-    display: none;
-  }
+  
 
 }
 
@@ -2767,6 +2847,11 @@ html.no-csstransitions .home-content__main {
     display: none;
   }
 
+  .header-logo img{
+    height: 100px;
+    width: 100px;
+  }
+
 }
 
 @media only screen and (max-width:600px) {
@@ -2805,6 +2890,11 @@ html.no-csstransitions .home-content__main {
     margin-right: auto;
   }
 
+  .header-menu-icon{
+    height: 90px;
+    width: 90px
+  }
+
 }
 
 @media only screen and (max-width:500px) {
@@ -2814,6 +2904,21 @@ html.no-csstransitions .home-content__main {
 
   .home-content h3 {
     font-size: 1.8rem;
+  }
+
+  .image {
+    height: 210px !important;
+    width: 800px !important;
+  }
+
+  .header-logo img{
+    height: 120px;
+    width: 120px;
+  }
+
+  .header-menu-icon{
+    height: 90px;
+    width: 90px
   }
 
 }
@@ -2847,6 +2952,21 @@ html.no-csstransitions .home-content__main {
 
   .home-content__button {
     margin-top: 3.6rem;
+  }
+
+  .image {
+    height: 183px !important;
+    width: 800px !important;
+  }
+
+  .header-logo img{
+    height: 120px;
+    width: 120px;
+  }
+
+  .header-menu-icon{
+    height: 90px;
+    width: 90px
   }
 
 }
@@ -3842,7 +3962,7 @@ html.no-csstransitions .home-content__main {
   }
 
   .contact-email a {
-    font-size: 7.6rem;
+    font-size: 6.6rem;
   }
 
 }
@@ -3858,7 +3978,7 @@ html.no-csstransitions .home-content__main {
   }
 
   .contact-email a {
-    font-size: 7.2rem;
+    font-size: 6.6rem;
   }
 
 }
@@ -3869,7 +3989,7 @@ html.no-csstransitions .home-content__main {
   }
 
   .contact-email a {
-    font-size: 6.2rem;
+    font-size: 5.8rem;
   }
 
   .contact-social {
@@ -3884,7 +4004,7 @@ html.no-csstransitions .home-content__main {
   }
 
   .contact-email a {
-    font-size: 5.5rem;
+    font-size: 5.1rem;
   }
 
   .contact-social {
@@ -3899,7 +4019,7 @@ html.no-csstransitions .home-content__main {
   }
 
   .contact-email a {
-    font-size: 3.8rem;
+    font-size: 3.0rem;
   }
 
   .contact-social {
@@ -3931,7 +4051,7 @@ html.no-csstransitions .home-content__main {
   }
 
   .contact-email a {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
 }
@@ -4097,5 +4217,3 @@ text-decoration: none;
   }
 
 }
-
-/*# sourceMappingURL=main.css.map */
