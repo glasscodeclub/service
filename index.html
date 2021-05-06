@@ -1,623 +1,1094 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
-<head>
-
-    <!--- basic page needs
+    <head>
+        <!--- basic page needs
     ================================================== -->
-    <meta charset="utf-8">
-    <title>GlassCode Club</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
+        <meta charset="utf-8" />
+        <title>GlassCode Club</title>
+        <meta name="description" content="" />
+        <meta name="author" content="" />
 
-    <!-- mobile specific metas
+        <!-- mobile specific metas
     ================================================== -->
-    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+        <meta name="viewport" content="width=device-width, initial-scale=0.5" />
 
-    <!-- CSS
+        <!-- CSS
     ================================================== -->
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/vendor.css">
-    <link rel="stylesheet" href="css/main.css">
-    <!-- script
+        <link rel="stylesheet" href="css/base.css" />
+        <link rel="stylesheet" href="css/vendor.css" />
+        <link rel="stylesheet" href="css/main.css" />
+        <!-- script
     ================================================== -->
-    <script src="js/modernizr.js"></script>
+        <script src="js/modernizr.js"></script>
 
-    <!-- favicons
+        <!-- favicons
     ================================================== -->
-    <link rel="shortcut icon" href="images\favicon.ico" type="image/x-icon">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+        <link
+            rel="shortcut icon"
+            href="images/favicon.ico"
+            type="image/x-icon"
+        />
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+        <script src="js/jquery-3.2.1.min.js"></script>
+    </head>
 
-</head>
-
-
-<body id="top">
-    
-    <!-- preloader
+    <body id="top">
+        <!-- preloader
     ================================================== -->
-    <div id="preloader">
-        <div id="loader" class="dots-jump">
-            <div></div>
-            <div></div>
-            <div></div>
+        <div id="preloader">
+            <div id="loader" class="dots-jump">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
         </div>
-    </div>
 
-    <!-- header
+        <!-- header
     ================================================== -->
-    <header class="s-header">
-                  
-        <div class="header-logo">
-            <a class="site-logo hvr-grow-shadow" href="index.html">
-                
-                <img src="images/icons/GC_logo.png" alt="Homepage">
-            </a>
-        </div> 
-    <!-- end header-logo -->
-
-        <nav class="header-nav">
-
-            <a href="#0" class="header-nav__close" title="close"><span>Close</span></a>
-
-            <!-- <h3 style="color: #fff; font-family: Roboto; font-weight: bolder; font-size: x-large;">GlassCode Club</h3> -->
-            
-            <div class="header-nav__content">
-                
-                <ul class="header-nav__list">
-                    <li><a class="smoothscroll hvr-grow-shadow"  href="#home" title="home" style="font-family: roboto; ">Home</a></li>
-                    <li><a class="smoothscroll hvr-grow-shadow"  href="#about" title="about" style="font-family: roboto;">About</a></li>
-                    <li><a class="smoothscroll hvr-grow-shadow"  href="#services" title="services" style="font-family: roboto;">Services</a></li>
-                    <li><a class="smoothscroll hvr-grow-shadow"  href="#works" title="works" style="font-family: roboto;">Works</a></li>
-                    <li><a class="smoothscroll hvr-grow-shadow"  href="#contact" title="contact" style="font-family: roboto;">Contact</a></li>
-                </ul>
-    
-                <!-- <p>Perspiciatis hic praesentium nesciunt. Et neque a dolorum <a href='#0'>voluptatem</a> porro iusto sequi veritatis libero enim. Iusto id suscipit veritatis neque reprehenderit.</p> -->
-    
-                <ul class="header-nav__social">
-                    <li>
-                        <a href="https://www.facebook.com/glasscodeclub" target="_blank"><i class="fab fa-facebook hvr-grow-shadow"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/glasscode-club-633645202?" target="_blank"><i class="fab fa-linkedin hvr-grow-shadow"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/glasscodeclub/ " target="_blank"><i class="fab fa-instagram hvr-grow-shadow"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/glasscodeclub" target="_blank"><i class="fab fa-github hvr-grow-shadow"></i></a>
-                    </li>
-                </ul>
-
-            </div> <!-- end header-nav__content -->
-
-        </nav> <!-- end header-nav -->
-
-        <a class="header-menu-toggle hvr-grow-shadow" href="#0">
-            <span class="header-menu-icon"></span>
-        </a>
-
-    </header> <!-- end s-header -->
-
-    <!-- home
-    ================================================== -->
-    <section id="home" class="s-home page-hero target-section" data-parallax="scroll" 
-    data-image-src="images/arnold-bg.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
-
-        <div class="home-content">
-
-            <div class="row home-content__main">
-
-                <h1 class="block-effect" style="--td: 1.2s">
-                    <style>
-                        /* reset */
-                        *,
-                        *::before,
-                        *::after {
-                            margin: 0;
-                            padding: 0;
-                            box-sizing: border-box;
-                        }
-
-                        /* other */
-                        .info {
-                            margin: 20px 0;
-                            text-align: center;
-                            }
-
-                        /* block-$ */
-                        .block-effect {
-                            font-size: calc(8px + 6vw);
-                            }
-
-                        .block-reveal {
-                            --t: calc(var(--td) + var(--d));
-                            color: transparent;
-                            padding: 4px;
-                            position: relative;
-                            overflow: hidden;
-                            animation: revealBlock 0s var(--t) forwards;
-                            }
-                            .sub{
-                                font-size: 4.0rem; 
-                                line-height: 2.342; 
-                                text-align:center;
-                                }
-                                .block-reveal:hover{
-                                    transform: translateY(-7px);
-                                    }
-                                    .block-reveal::after {
-                                        content: '';
-                                        width: 9rem;
-                                        height: 9rem;
-                                        padding-bottom: 4px;
-                                        position: absolute;
-                                        top: 0;
-                                        left: 0;
-                                        background: var(--bc);
-                                        animation: revealingIn var(--td) var(--d) forwards, revealingOut var(--td) var(--t) forwards;}
-                                        /* animations */
-                                        @keyframes revealBlock {
-                                            100% {
-                                                color: #ffffff;
-                                                }
-                                                }
-                                                @keyframes revealingIn {
-                                                    0% {
-                                                        width: 0;
-                                                        }
-                                                        100% {
-                                                            width: 100%;
-                                                            }}
-                                                            @keyframes revealingOut {
-                                                                0% {
-                                                                    transform: translateX(0);
-                                                                    }
-                                                                    100% {
-                                                                        transform: translateX(100%);
-                                                                        }}
-                                                                        </style>
-                                                                        <div class="block-reveal" style="--bc: linear-gradient(to right #000046 0%, #1CB5E0  51%, #000046  100%); --d: .1s;font-size: 9rem; font-family: tahoma;">GlassCode Club</div>
-                                                                        <div class="block-reveal sub" style="--bc: #2993a1; --d: .5s; font-family: roboto;">
-                                                                        <style>
-                                                                        .block-effect {
-                                                                            animation-duration: 3s;
-                                                                            animation-name: slidein;
-                                                                            animation-iteration-count: initial;}
-                                                                        @keyframes slidein {
-                                                                            from {
-                                                                                margin-left: 100%;
-                                                                                width: 300%;
-                                                                            }
-
-                                                                            to {
-                                                                                margin-left: 0%;
-                                                                                width: 100%;
-                                                                                }}
-                                                                                </style>
-                                                                                We provide software development services to boost your business</div></h1>
-
-
-                <div class="home-content__button">
-                    <a href="#about" class="smoothscroll btn btn--primary btn--large hvr-grow-shadow" style="font-family: roboto; font-size: small;">
-                        More About Us
-                    </a>
-                    
-                    <a href="#contact" class="smoothscroll btn btn--large button hvr-grow-shadow" style="font-family: roboto; font-size: small; margin-left: 10px;">
-                        Contact us
-                    </a>
-                </div>
-
-            </div> 
-            <!-- end home-content__main -->
-            
-            <div class="home-content__scroll">
-                <a href="#about" class="scroll-link smoothscroll" style="font-family: tahoma;">
-                    Scroll
+        <header class="s-header">
+            <div class="header-logo">
+                <a class="site-logo hvr-grow-shadow" href="index.html">
+                    <img src="images/icons/GC_logo.png" alt="Homepage" />
                 </a>
             </div>
+            <!-- end header-logo -->
 
-        </div> 
-        <!-- end home-content -->
+            <nav class="header-nav">
+                <a href="#0" class="header-nav__close" title="close"
+                    ><span>Close</span></a
+                >
 
-        <ul class="home-social">
-            <li>
-                <a href="https://www.facebook.com/glasscodeclub" target="_blank"><i class="fab fa-facebook-f" aria-hidden="true"></i><span>Facebook</span></a>
-            </li>
-            <li>
-                <a href="https://github.com/glasscodeclub" target="_blank"><i class="fab fa-github" aria-hidden="true"></i><span>Github</span></a>
-            </li>
-            <li>
-                <a href="https://www.instagram.com/glasscodeclub/" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i><span>Instagram</span></a>
-            </li>
-            <li>
-                <a href="https://www.linkedin.com/in/glasscode-club-633645202?" target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i><span>LinkedIn</span></a>
-            </li>
-        </ul> 
-        <!-- end home-social -->
+                <!-- <h3 style="color: #fff; font-family: Roboto; font-weight: bolder; font-size: x-large;">GlassCode Club</h3> -->
 
-    </section> 
-    <!-- end s-home -->
+                <div class="header-nav__content">
+                    <ul class="header-nav__list">
+                        <li>
+                            <a
+                                class="smoothscroll hvr-grow-shadow"
+                                href="#home"
+                                title="home"
+                                style="font-family: roboto"
+                                >Home</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                class="smoothscroll hvr-grow-shadow"
+                                href="#about"
+                                title="about"
+                                style="font-family: roboto"
+                                >About</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                class="smoothscroll hvr-grow-shadow"
+                                href="#services"
+                                title="services"
+                                style="font-family: roboto"
+                                >Services</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                class="smoothscroll hvr-grow-shadow"
+                                href="#works"
+                                title="works"
+                                style="font-family: roboto"
+                                >Works</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                class="smoothscroll hvr-grow-shadow"
+                                href="#contact"
+                                title="contact"
+                                style="font-family: roboto"
+                                >Contact</a
+                            >
+                        </li>
+                    </ul>
 
+                    <!-- <p>Perspiciatis hic praesentium nesciunt. Et neque a dolorum <a href='#0'>voluptatem</a> porro iusto sequi veritatis libero enim. Iusto id suscipit veritatis neque reprehenderit.</p> -->
 
-    <!-- about
+                    <ul class="header-nav__social">
+                        <li>
+                            <a
+                                href="https://www.facebook.com/glasscodeclub"
+                                target="_blank"
+                                ><i class="fab fa-facebook hvr-grow-shadow"></i
+                            ></a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://www.linkedin.com/in/glasscode-club-633645202?"
+                                target="_blank"
+                                ><i class="fab fa-linkedin hvr-grow-shadow"></i
+                            ></a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://www.instagram.com/glasscodeclub/ "
+                                target="_blank"
+                                ><i class="fab fa-instagram hvr-grow-shadow"></i
+                            ></a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://github.com/glasscodeclub"
+                                target="_blank"
+                                ><i class="fab fa-github hvr-grow-shadow"></i
+                            ></a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- end header-nav__content -->
+            </nav>
+            <!-- end header-nav -->
+
+            <a class="header-menu-toggle hvr-grow-shadow" href="#0">
+                <span class="header-menu-icon"></span>
+            </a>
+        </header>
+        <!-- end s-header -->
+
+        <!-- home
     ================================================== -->
-    <section id="about" class="s-about target-section">
+        <section
+            id="home"
+            class="s-home page-hero target-section"
+            data-parallax="scroll"
+            data-image-src="images/arnold-bg.jpg"
+            data-natural-width="3000"
+            data-natural-height="2000"
+            data-position-y="center"
+        >
+            <div class="home-content">
+                <div class="row home-content__main">
+                    <h1 class="block-effect" style="--td: 1.2s">
+                        <style>
+                            /* reset */
+                            *,
+                            *::before,
+                            *::after {
+                                margin: 0;
+                                padding: 0;
+                                box-sizing: border-box;
+                            }
 
-        <div class="row section-header bit-narrow" data-aos="fade-up">
-            <div class="col-full">
-                <h3 class="subhead hvr-grow-shadow" style="font-family: montserrat;"> Who We Are</h3></br></br>
-                <p class="display-1"><a class= "underlined underlined--offset" style="text-align: justify; font-family: nunito sans;">
-                    We are GlassCode Club, a design and development team. We design thoughtful digital experiences, 
-                    build beautiful brand aesthetics. Everything from business-ready custom websites to rich interactive 
-                    web apps.</a>
-                </p>
-            </div>
-        </div> 
-        <!-- end section-header -->
+                            /* other */
+                            .info {
+                                margin: 20px 0;
+                                text-align: center;
+                            }
 
-        <div class="row bit-narrow" data-aos="fade-up">
-            <div class="col-full hvr-grow-shadow division">
-                <p class="lead" style="text-align: justify; font-family: roboto; color: #808080; font-weight: bold;">
-                    Founded in 2018, since then till now, we have mastered the craft of web development and 
-                    digital marketing, ensuring that the client businesses flourish and create a unique brand experience. 
-                    We help enterprise businesses in their digital transition through our wide range of web/mobile 
-                    development services. Our graphic designers and source code writers are always ready to work, 
-                    making sure that we deliver exactly what you want for your business or an idea, whether it be a static 
-                    website, an e-commerce website or even brochures.
-                </p>
+                            /* block-$ */
+                            .block-effect {
+                                font-size: calc(8px + 6vw);
+                            }
+
+                            .block-reveal {
+                                --t: calc(var(--td) + var(--d));
+                                color: transparent;
+                                padding: 4px;
+                                position: relative;
+                                overflow: hidden;
+                                animation: revealBlock 0s var(--t) forwards;
+                            }
+                            .sub {
+                                font-size: 4rem;
+                                line-height: 2.342;
+                                text-align: center;
+                            }
+                            .block-reveal:hover {
+                                transform: translateY(-7px);
+                            }
+                            .block-reveal::after {
+                                content: "";
+                                width: 9rem;
+                                height: 9rem;
+                                padding-bottom: 4px;
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                background: var(--bc);
+                                animation: revealingIn var(--td) var(--d)
+                                        forwards,
+                                    revealingOut var(--td) var(--t) forwards;
+                            }
+                            /* animations */
+                            @keyframes revealBlock {
+                                100% {
+                                    color: #ffffff;
+                                }
+                            }
+                            @keyframes revealingIn {
+                                0% {
+                                    width: 0;
+                                }
+                                100% {
+                                    width: 100%;
+                                }
+                            }
+                            @keyframes revealingOut {
+                                0% {
+                                    transform: translateX(0);
+                                }
+                                100% {
+                                    transform: translateX(100%);
+                                }
+                            }
+                        </style>
+                        <div
+                            class="block-reveal"
+                            style="
+                                --bc: linear-gradient(
+                                    to right #000046 0%,
+                                    #1cb5e0 51%,
+                                    #000046 100%
+                                );
+                                --d: 0.1s;
+                                font-size: 9rem;
+                                font-family: tahoma;
+                            "
+                        >
+                            GlassCode Club
+                        </div>
+                        <div
+                            class="block-reveal sub"
+                            style="
+                                --bc: #2993a1;
+                                --d: 0.5s;
+                                font-family: roboto;
+                            "
+                        >
+                            <style>
+                                .block-effect {
+                                    animation-duration: 3s;
+                                    animation-name: slidein;
+                                    animation-iteration-count: initial;
+                                }
+                                @keyframes slidein {
+                                    from {
+                                        margin-left: 100%;
+                                        width: 300%;
+                                    }
+
+                                    to {
+                                        margin-left: 0%;
+                                        width: 100%;
+                                    }
+                                }
+                            </style>
+                            We provide software development services to boost
+                            your business
+                        </div>
+                    </h1>
+
+                    <div class="home-content__button">
+                        <a
+                            href="#about"
+                            class="smoothscroll btn btn--primary btn--large hvr-grow-shadow"
+                            style="font-family: roboto; font-size: small"
+                        >
+                            More About Us
+                        </a>
+
+                        <a
+                            href="#contact"
+                            class="smoothscroll btn btn--large button hvr-grow-shadow"
+                            style="
+                                font-family: roboto;
+                                font-size: small;
+                                margin-left: 10px;
+                            "
+                        >
+                            Contact us
+                        </a>
+                    </div>
+                </div>
+                <!-- end home-content__main -->
+
+                <div class="home-content__scroll">
+                    <a
+                        href="#about"
+                        class="scroll-link smoothscroll"
+                        style="font-family: tahoma"
+                    >
+                        Scroll
+                    </a>
+                </div>
             </div>
+            <!-- end home-content -->
+
+            <ul class="home-social">
+                <li>
+                    <a
+                        href="https://www.facebook.com/glasscodeclub"
+                        target="_blank"
+                        ><i class="fab fa-facebook-f" aria-hidden="true"></i
+                        ><span>Facebook</span></a
+                    >
+                </li>
+                <li>
+                    <a href="https://github.com/glasscodeclub" target="_blank"
+                        ><i class="fab fa-github" aria-hidden="true"></i
+                        ><span>Github</span></a
+                    >
+                </li>
+                <li>
+                    <a
+                        href="https://www.instagram.com/glasscodeclub/"
+                        target="_blank"
+                        ><i class="fab fa-instagram" aria-hidden="true"></i
+                        ><span>Instagram</span></a
+                    >
+                </li>
+                <li>
+                    <a
+                        href="https://www.linkedin.com/in/glasscode-club-633645202?"
+                        target="_blank"
+                        ><i class="fab fa-linkedin" aria-hidden="true"></i
+                        ><span>LinkedIn</span></a
+                    >
+                </li>
+            </ul>
+            <!-- end home-social -->
+        </section>
+        <!-- end s-home -->
+
+        <!-- about
+    ================================================== -->
+        <section id="about" class="s-about target-section">
+            <div
+                class="row section-header bit-narrow"
+                data-aos="fade-up"
+                data-aos-duration="500"
+            >
+                <div class="col-full">
+                    <h3
+                        class="subhead hvr-grow-shadow"
+                        style="font-family: montserrat"
+                    >
+                        Who We Are
+                    </h3>
+                    <br /><br />
+                    <p class="display-1">
+                        <a
+                            class="underlined underlined--offset"
+                            style="
+                                text-align: justify;
+                                font-family: nunito sans;
+                            "
+                        >
+                            We are GlassCode Club, a design and development
+                            team. We design thoughtful digital experiences,
+                            build beautiful brand aesthetics. Everything from
+                            business-ready custom websites to rich interactive
+                            web apps.</a
+                        >
+                    </p>
+                </div>
+            </div>
+            <!-- end section-header -->
+
+            <div
+                class="row bit-narrow"
+                data-aos="fade-up"
+                data-aos-duration="500"
+            >
+                <div class="col-full hvr-grow-shadow division">
+                    <p
+                        class="lead"
+                        style="
+                            text-align: justify;
+                            font-family: roboto;
+                            color: #808080;
+                            font-weight: bold;
+                        "
+                    >
+                        Founded in 2018, since then till now, we have mastered
+                        the craft of web development and digital marketing,
+                        ensuring that the client businesses flourish and create
+                        a unique brand experience. We help enterprise businesses
+                        in their digital transition through our wide range of
+                        web/mobile development services. Our graphic designers
+                        and source code writers are always ready to work, making
+                        sure that we deliver exactly what you want for your
+                        business or an idea, whether it be a static website, an
+                        e-commerce website or even brochures.
+                    </p>
+                </div>
+            </div>
+            <!-- end about-desc -->
+
+            <div class="row bit-narrow">
+                <div class="about-process process block-1-2 block-tab-full">
+                    <div
+                        class="col-block item-process"
+                        data-aos="fade-up"
+                        data-aos-duration="500"
+                    >
+                        <div class="item-service__icon">
+                            <img
+                                src="images/icons/edit-9-48.png"
+                                alt="Define"
+                            />
+                            <h4
+                                class="item-title"
+                                style="font-family: montserrat"
+                            >
+                                Define
+                            </h4>
+                        </div>
+                        <div class="item-process__text hvr-grow-shadow">
+                            <p
+                                class="info"
+                                style="
+                                    text-align: justify;
+                                    font-family: roboto;
+                                    color: darkgrey;
+                                "
+                            >
+                                We aim to grasp the knowledge about the project
+                                when the clients reaches us. We take the time to
+                                research, understand your business and gather
+                                all the desired information to ensure that we
+                                and our clients are on the same page. Our team
+                                discusses your needs, requirements and
+                                expectations from the product to flesh out
+                                deliverables.
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="col-block item-process"
+                        data-aos="fade-up"
+                        data-aos-duration="500"
+                    >
+                        <div class="item-service__icon">
+                            <img
+                                src="images/icons/picture-48.png"
+                                alt="design"
+                            />
+                            <h4
+                                class="item-title"
+                                style="font-family: montserrat"
+                            >
+                                Design
+                            </h4>
+                        </div>
+                        <div class="item-process__text hvr-grow-shadow">
+                            <p
+                                class="info"
+                                style="
+                                    text-align: justify;
+                                    font-family: roboto;
+                                    color: darkgrey;
+                                "
+                            >
+                                Once we have enough information along with
+                                appropriate wireframes, we have thorough
+                                deliberations with the client about how we plan
+                                to approach the project. Our designers build the
+                                face of the product which will portray how the
+                                product will look like when it is finished. We
+                                refine the appearance of the elements and create
+                                a design to the customer satisfaction. After
+                                adding final touches, we proceed towards the
+                                development stage.
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="col-block item-process"
+                        data-aos="fade-up"
+                        data-aos-duration="500"
+                    >
+                        <div class="item-service__icon">
+                            <img
+                                src="images/icons/icons8-full-tool-storage-box-50.png"
+                                alt="build"
+                            />
+                            <h4
+                                class="item-title"
+                                style="font-family: montserrat"
+                            >
+                                Build
+                            </h4>
+                        </div>
+                        <div class="item-process__text hvr-grow-shadow">
+                            <p
+                                class="info"
+                                style="
+                                    text-align: justify;
+                                    font-family: roboto;
+                                    color: darkgrey;
+                                "
+                            >
+                                We begin with coding process in various stages.
+                                Each stage set the pace for every milestone. It
+                                helps in making further plans more carefully.
+                                Our key to deliver successful results is to keep
+                                the processes simple and efficient. All our
+                                projects go through different layers of testing
+                                and quality assurance, to make sure that the
+                                final deliverable is perfectly working. Through
+                                this process in development we ensure exellence
+                                and help the client to get more clarity of the
+                                product.
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="col-block item-process"
+                        data-aos="fade-up"
+                        data-aos-duration="500"
+                    >
+                        <div class="item-service__icon">
+                            <img
+                                src="images/icons/rocket-48.png"
+                                alt="launch"
+                            />
+                            <h4
+                                class="item-title"
+                                style="font-family: montserrat"
+                            >
+                                Launch
+                            </h4>
+                        </div>
+                        <div class="item-process__text hvr-grow-shadow">
+                            <p
+                                class="info"
+                                style="
+                                    text-align: justify;
+                                    font-family: roboto;
+                                    color: darkgrey;
+                                "
+                            >
+                                The final product is delivered and assistance is
+                                offered to help with deployment. We create and
+                                execute a marketing plan to promote the product.
+                                Thanks to our considerable experienced team that
+                                saves time during the final stages of
+                                development.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- end process -->
+            </div>
+            <!-- end row -->
+        </section>
+        <!-- end s-about -->
+
+        <!-- services
+    ================================================== -->
+        <section id="services" class="s-services target-section darker">
+            <div
+                class="row section-header bit-narrow"
+                data-aos="fade-up"
+                data-aos-duration="500"
+            >
+                <div class="col-full">
+                    <h3
+                        class="subhead hvr-grow-shadow"
+                        style="font-family: montserrat; text-align: justify"
+                    >
+                        What we do
+                    </h3>
+                    <h1
+                        class="heads"
+                        data-shadow=" We take pride in what we do. Our expertise with the latest tools and techniques 
+                helps you to take your business to the next level!"
+                        style="font-family: nunito sans"
+                    >
+                        We take pride in what we do. Our expertise with the
+                        latest tools and techniques helps you to take your
+                        business to the next level!
+                        <style>
+                            @import url(https://fonts.googleapis.com/css?family=Roboto);
+
+                            *,
+                            *:before,
+                            *:after {
+                                margin: 0;
+                                padding: 1px;
+                                box-sizing: border-box;
+                                position: relative;
+                            }
+                            .heads {
+                                display: inline-block;
+                                color: white;
+                                font-family: "Roboto", serif;
+                                font-size: 4.6rem;
+                                text-shadow: 0.03em 0.03em 0
+                                    hsla(230, 40%, 50%, 1);
+                            }
+                            .heads:after {
+                                content: attr(data-shadow);
+                                position: absolute;
+                                top: 0.06em;
+                                left: 0.06em;
+                                z-index: -1;
+                                text-shadow: none;
+                                background-image: linear-gradient(
+                                    45deg,
+                                    transparent 45%,
+                                    hsla(48, 20%, 90%, 1) 45%,
+                                    hsla(48, 20%, 90%, 1) 55%,
+                                    transparent 0
+                                );
+                                background-size: 0.05em 0.05em;
+                                -webkit-background-clip: text;
+                                -webkit-text-fill-color: transparent;
+                                animation: shad-anim 10s linear infinite;
+                            }
+
+                            @keyframes shad-anim {
+                                0% {
+                                    background-position: 0 0;
+                                }
+                                0% {
+                                    background-position: 100% -100%;
+                                }
+                            }
+                        </style>
+                    </h1>
+                </div>
+            </div>
+            <!-- end section-header -->
+
+            <div class="row bit-narrow services block-1-2 block-tab-full">
+                <div
+                    class="col-block item-service"
+                    data-aos="fade-up"
+                    data-aos-duration="500"
+                >
+                    <div class="item-service__icon">
+                        <i class="icon-star"></i>
+                    </div>
+                    <div class="item-service__text paragraph">
+                        <h3 class="item-title" style="font-family: montserrat">
+                            Brand Identity
+                        </h3>
+                        <p
+                            style="
+                                text-align: justify;
+                                font-family: roboto;
+                                color: darkgrey;
+                            "
+                        >
+                            Your brand is the identity of your business trying
+                            to communicate with your customers. Crafting a
+                            identity for your business that will convey your
+                            intention, goals and all that you intend to do for
+                            your audience.
+                        </p>
+                    </div>
+                </div>
+
+                <div
+                    class="col-block item-service"
+                    data-aos="fade-up"
+                    data-aos-duration="500"
+                >
+                    <div class="item-service__icon">
+                        <i class="icon-group"></i>
+                    </div>
+                    <div
+                        class="item-service__text paragraph"
+                        style="height: 329px"
+                    >
+                        <h3 class="item-title" style="font-family: montserrat">
+                            Illustration
+                        </h3>
+                        <p
+                            style="
+                                text-align: justify;
+                                font-family: roboto;
+                                color: darkgrey;
+                            "
+                        >
+                            We make beautiful and intriguing illustrations
+                            ensuring that the facts, data and the images
+                            mentioned in it are well organized which makes it
+                            appealing to a larger audiences.
+                        </p>
+                    </div>
+                </div>
+
+                <div
+                    class="col-block item-service"
+                    data-aos="fade-up"
+                    data-aos-duration="500"
+                >
+                    <div class="item-service__icon">
+                        <i class="icon-pie-chart"></i>
+                    </div>
+                    <div class="item-service__text paragraph customer">
+                        <h3 class="item-title" style="font-family: montserrat">
+                            Marketing
+                        </h3>
+                        <p
+                            style="
+                                text-align: justify;
+                                font-family: roboto;
+                                color: darkgrey;
+                            "
+                        >
+                            With the help of our digital marketing and online
+                            marketing services for your business, your brand
+                            improves the conversion of traffic into more leads
+                            and sales. These methods offer businesses the
+                            opportunity to get closer to the consumers by
+                            engaging in conversations with them and monitoring
+                            what they are saying.
+                        </p>
+                    </div>
+                </div>
+
+                <div
+                    class="col-block item-service"
+                    data-aos="fade-up"
+                    data-aos-duration="500"
+                >
+                    <div class="item-service__icon">
+                        <i class="icon-desktop"></i>
+                    </div>
+                    <div class="item-service__text paragraph">
+                        <h3 class="item-title" style="font-family: montserrat">
+                            Web Development
+                        </h3>
+                        <p
+                            style="
+                                text-align: justify;
+                                font-family: roboto;
+                                color: darkgrey;
+                            "
+                        >
+                            Our web development team not only focuses on the
+                            visual effects of the website, but also take other
+                            factors into condideration such as the
+                            user-friendliness of the website, each of
+                            maintenance and adhering to the best practices and
+                            website developement standards. Our aim is to assist
+                            and advise our clients on how to take advantages of
+                            the latest web technologies that can help them to
+                            work smarter, not harder.
+                        </p>
+                    </div>
+                </div>
+
+                <div
+                    class="col-block item-service"
+                    data-aos="fade-up"
+                    data-aos-duration="500"
+                >
+                    <div class="item-service__icon">
+                        <i class="icon-cube"></i>
+                    </div>
+                    <div class="item-service__text paragraph">
+                        <h3 class="item-title" style="font-family: montserrat">
+                            UI/UX Design
+                        </h3>
+                        <p
+                            style="
+                                text-align: justify;
+                                font-family: roboto;
+                                color: darkgrey;
+                            "
+                        >
+                            The finalization of the UX design happens only when
+                            you go through the wireframes of the product, which
+                            is the skeleton of your real-working model. After
+                            that, we implement the latest trends and
+                            technologies in UI designing while experimenting
+                            innovative ideas that will attract your customers to
+                            the visual appeal and aesthetics of your
+                            website/app.
+                        </p>
+                    </div>
+                </div>
+
+                <div
+                    class="col-block item-service"
+                    data-aos="fade-up"
+                    data-aos-duration="500"
+                >
+                    <div class="item-service__icon">
+                        <i class="icon-lego-block"></i>
+                    </div>
+                    <div class="item-service__text paragraph">
+                        <h3 class="item-title" style="font-family: montserrat">
+                            Frontend Design
+                        </h3>
+                        <p
+                            style="
+                                text-align: justify;
+                                font-family: roboto;
+                                color: darkgrey;
+                            "
+                        >
+                            We not only focus on the correct layout of the
+                            website, but also the layout of webpages for
+                            readability and making sure that all coded elements
+                            are marked and labelled correctly. When writing the
+                            code of a website, the biggest challenge is to
+                            balance aesthetics, to make sure it’s user-friendly
+                            and easy to access to accommodate as many users as
+                            possible.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- end services -->
+        </section>
+        <!-- end s-services -->
+
+        <div class="modal">
+            <i class="fas fa-times close"></i>
+            <div class="modal-img"></div>
+            <div class="modal-desc"></div>
         </div>
-         <!-- end about-desc -->
 
-        <div class="row bit-narrow">
-                
-            <div class="about-process process block-1-2 block-tab-full">
-
-                <div class="col-block item-process" data-aos="fade-up">
-                    <div class="item-service__icon">
-                        <img src="images/icons/edit-9-48.png" alt="Define">
-                        <h4 class="item-title" style="font-family: montserrat;">Define</h4>
-                    </div>
-                    <div class="item-process__text hvr-grow-shadow">
-                        
-                        <p class="info" style="text-align: justify; font-family: roboto; color:darkgrey;">
-                            We aim to grasp the knowledge about the project when the clients reaches us. We take the time to research, 
-                            understand your business and gather all the desired information to ensure that we and our clients are on the same 
-                            page. Our team discusses your needs, requirements and expectations from the product to flesh out deliverables.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-block item-process" data-aos="fade-up">
-                    <div class="item-service__icon">
-                        <img src="images/icons/picture-48.png" alt="design">
-                        <h4 class="item-title" style="font-family: montserrat;">Design</h4>
-                    </div>
-                    <div class="item-process__text hvr-grow-shadow">
-                        
-                        <p class="info" style="text-align: justify; font-family: roboto; color:darkgrey;">
-                            Once we have enough information along with appropriate wireframes, we have thorough 
-                            deliberations with the client about how we plan to approach the project. Our designers 
-                            build the face of the product which will portray how the product will look like when it is 
-                            finished. We refine the appearance of the elements and create a design to the customer 
-                            satisfaction. After adding final touches, we proceed towards the development stage.
-
-                        </p>
-                    </div>
-                </div>
-                <div class="col-block item-process" data-aos="fade-up">
-                    <div class="item-service__icon">
-                        <img src="images/icons/icons8-full-tool-storage-box-50.png" alt="build">
-                        <h4 class="item-title" style="font-family: montserrat;">Build</h4>
-                    </div>
-                    <div class="item-process__text hvr-grow-shadow">    
-                        <p class="info" style="text-align: justify; font-family: roboto; color:darkgrey;">
-                            We begin with coding process in various stages. Each stage set the pace for every milestone. 
-                            It helps in making further plans more carefully. Our key to deliver successful results is to 
-                            keep the processes simple and efficient. All our projects go through different layers of 
-                            testing and quality assurance, to make sure that the final deliverable is perfectly working. 
-                            Through this process in development we ensure exellence and help the client to get more 
-                            clarity of the product.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-block item-process" data-aos="fade-up">
-                    <div class="item-service__icon">
-                        <img src="images/icons/rocket-48.png" alt="launch">
-                        <h4 class="item-title" style="font-family: montserrat;">Launch</h4>
-                    </div>
-                    <div class="item-process__text hvr-grow-shadow">
-                        
-                        <p class="info" style="text-align: justify; font-family: roboto; color:darkgrey;">
-                            The final product is delivered and assistance is offered to help with deployment. We create 
-                            and execute a marketing plan to promote the product.
-                            Thanks to our considerable experienced team that saves time during the final stages of 
-                            development.
-                        </p>
-                    </div>
-                </div>
-
-            </div> 
-            <!-- end process -->
-
-        </div> 
-        <!-- end row -->
-
-    </section> 
-    <!-- end s-about -->
-
-
-    <!-- services
+        <!-- works
     ================================================== -->
-    <section id='services' class="s-services target-section darker">
+        <section id="works" class="s-works target-section">
+            <div
+                class="row section-header has-bottom-sep narrow target-section"
+                data-aos="fade-up"
+                data-aos-duration="500"
+            >
+                <div class="col-full">
+                    <h3
+                        class="subhead hvr-grow-shadow"
+                        style="font-family: montserrat; text-align: center"
+                    >
+                        Our Works
+                    </h3>
+                    <h1
+                        class="sub-head hvr-grow-shadow"
+                        style="font-family: nunito sans"
+                    >
+                        <style>
+                            @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 
-        <div class="row section-header bit-narrow" data-aos="fade-up">
-            <div class="col-full">
-                <h3 class="subhead hvr-grow-shadow" style="font-family: montserrat; text-align: justify;">What we do</h3>
-                <h1 class='heads' data-shadow=' We take pride in what we do. Our expertise with the latest tools and techniques 
-                helps you to take your business to the next level!' style="font-family: nunito sans;"> 
-                We take pride in what we do. Our expertise with the latest tools and techniques helps you to take your 
-                business to the next level!
-                <style>
-                    @import url(https://fonts.googleapis.com/css?family=Roboto);
+                            .sub-head {
+                                font-size: 4.6rem;
+                                text-shadow: 0 0 5px #1cb5e0, 0 0 15px #1cb5e0,
+                                    0 0 20px #1cb5e0, 0 0 40px #1cb5e0,
+                                    0 0 60px #000046, 0 0 10px #1cb5e0,
+                                    0 0 98px #000046;
+                                color: #fff6a9;
+                                text-align: center;
+                                animation: blink 2.5s infinite;
+                                -webkit-animation: blink 2.5s infinite;
+                            }
 
-                *, *:before, *:after {
-                margin: 0;
-                padding: 1px;
-                box-sizing: border-box;
-                position: relative;
-                }
-                .heads {
-                display: inline-block;
-                color: white;
-                font-family: 'Roboto', serif;
-                font-size: 4.6rem; 
-                text-shadow: .03em .03em 0 hsla(230,40%,50%,1);
-                }
-                .heads:after {
-                content: attr(data-shadow);
-                position: absolute;
-                top: .06em; left: .06em;
-                z-index: -1;
-                text-shadow: none;
-                background-image:
-                linear-gradient(
-                    45deg,
-                    transparent 45%,
-                  hsla(48,20%,90%,1) 45%,
-                  hsla(48,20%,90%,1) 55%,
-                    transparent 0
-                    );
-                background-size: .05em .05em;
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                animation: shad-anim 15s linear infinite;
-                }
+                            @-webkit-keyframes blink {
+                                20%,
+                                24%,
+                                55% {
+                                    color: #111;
+                                    text-shadow: none;
+                                }
 
-                @keyframes shad-anim {
-                0% {background-position: 0 0}
-                0% {background-position: 100% -100%}
-                }
-                </style>
-            </h1>
-        </div>
-    </div> 
-        <!-- end section-header -->
+                                0%,
+                                19%,
+                                21%,
+                                23%,
+                                25%,
+                                54%,
+                                56%,
+                                100% {
+                                    text-shadow: 0 0 5px #1cb5e0,
+                                        0 0 15px #1cb5e0, 0 0 20px,
+                                        0 0 40px #1cb5e0, 0 0 60px #000046,
+                                        0 0 10px #1cb5e0, 0 0 98px #000046;
+                                    color: #fff6a9;
+                                }
+                            }
 
-        <div class="row bit-narrow services block-1-2 block-tab-full">
+                            @keyframes blink {
+                                20%,
+                                24%,
+                                55% {
+                                    color: #111;
+                                    text-shadow: none;
+                                }
 
-            <div class="col-block item-service" data-aos="fade-up">
-                <div class="item-service__icon">
-                    <i class="icon-star"></i>
-                </div>
-                <div class="item-service__text paragraph">
-                    <h3 class="item-title" style="font-family: montserrat;">Brand Identity</h3>
-                    <p style="text-align: justify; font-family: roboto; color:darkgrey;">
-                        Your brand is the identity of your business trying to communicate with your customers. 
-                        Crafting a identity for your business that will convey your intention, goals and all that you 
-                        intend to do for your audience.
-                    </p>
-                </div>
-            </div>
-
-            <div class="col-block item-service" data-aos="fade-up">
-                <div class="item-service__icon">
-                    <i class="icon-group"></i>
-                </div>
-                <div class="item-service__text paragraph" style="height: 329px;">
-                    <h3 class="item-title" style="font-family: montserrat;">Illustration</h3>
-                    <p style="text-align: justify; font-family: roboto; color:darkgrey;">
-                        We make beautiful and intriguing illustrations ensuring that the facts, data and the images 
-                        mentioned in it are well organized which makes it appealing to a larger audiences.
-                    </p>
-                </div>
-            </div>
-
-            <div class="col-block item-service" data-aos="fade-up">
-                <div class="item-service__icon">
-                    <i class="icon-pie-chart"></i>
-                </div>  
-                <div class="item-service__text paragraph customer">
-                    <h3 class="item-title" style="font-family: montserrat;">Marketing</h3>
-                    <p style="text-align: justify; font-family: roboto; color:darkgrey;">
-                        With the help of our digital marketing and online marketing services for your business, 
-                        your brand improves the conversion of traffic into more leads and sales. These methods offer 
-                        businesses the opportunity to get closer to the consumers by engaging in conversations with 
-                        them and monitoring what they are saying.
-                    </p>
+                                0%,
+                                19%,
+                                21%,
+                                23%,
+                                25%,
+                                54%,
+                                56%,
+                                100% {
+                                    text-shadow: 0 0 5px #1cb5e0,
+                                        0 0 15px #1cb5e0, 0 0 20px #1cb5e0,
+                                        0 0 40px #1cb5e0, 0 0 60px #000046,
+                                        0 0 10px #1cb5e0, 0 0 98px #000046;
+                                    color: #fff6a9;
+                                }
+                            }
+                        </style>
+                        We create brands, products, and experiences that people
+                        love. Check out our recent works.
+                    </h1>
                 </div>
             </div>
+            <!-- end section-header -->
 
-            <div class="col-block item-service" data-aos="fade-up">
-                <div class="item-service__icon">
-                    <i class="icon-desktop"></i>
-                </div>
-                <div class="item-service__text paragraph">
-                    <h3 class="item-title" style="font-family: montserrat;">Web Development</h3>
-                    <p style="text-align: justify; font-family: roboto; color:darkgrey;">
-                        Our web development team not only focuses on the visual effects of the website, but also take other factors
-                        into condideration such as the user-friendliness of the website, each of maintenance and adhering to the best 
-                        practices and website developement standards. Our aim is to assist and advise our clients on how to take advantages
-                        of the latest web technologies that can help them to work smarter, not harder.
-                    </p>
-                </div>
-            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <!-- Galley wrapper that contains all items -->
+                        <div
+                            id="gallery"
+                            class="gallery"
+                            itemscope
+                            itemtype="http://schema.org/ImageGallery"
+                        >
+                            <!-- Use figure for a more semantic html -->
 
-            <div class="col-block item-service" data-aos="fade-up">
-                <div class="item-service__icon">
-                    <i class="icon-cube"></i>
-                </div>
-                <div class="item-service__text paragraph">
-                    <h3 class="item-title" style="font-family: montserrat;">UI/UX Design</h3>
-                    <p style="text-align: justify; font-family: roboto; color:darkgrey;">
-                        The finalization of the UX design happens only when you go through the wireframes of the product, 
-                        which is the skeleton of your real-working model. 
-                        After that, we implement the latest trends and technologies in UI designing while experimenting 
-                        innovative ideas that will attract your customers to the visual appeal and aesthetics of your 
-                        website/app.
-                    </p>
-                </div>
-            </div>
-    
-            <div class="col-block item-service" data-aos="fade-up">
-                <div class="item-service__icon"><i class="icon-lego-block"></i>
-                </div>
-                <div class="item-service__text paragraph">
-                    <h3 class="item-title" style="font-family: montserrat;">Frontend Design</h3>
-                    <p style="text-align: justify; font-family: roboto; color:darkgrey;">
-                        We not only focus on the correct layout of the website, but also the 
-                        layout of webpages for readability and making sure that all coded elements are marked and labelled correctly. 
-                        When writing the code of a website, the biggest challenge is to balance aesthetics, to make 
-                        sure it’s user-friendly and easy to access to accommodate as many users as possible.
-                    </p>
-                </div>
-            </div>
-        </div> 
-        <!-- end services -->
-
-    </section> 
-    <!-- end s-services -->
-
-
-    <!-- works
-    ================================================== -->
-    <section id="works" class="s-works target-section">
-
-        <div class="row section-header has-bottom-sep narrow target-section" data-aos="fade-up">
-            <div class="col-full">
-                <h3 class="subhead hvr-grow-shadow" style="font-family: montserrat; text-align: center;">Our Works</h3>
-                <h1 class='sub-head hvr-grow-shadow' style="font-family: nunito sans;"> 
-                <style>
-                    @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
-
-                    .sub-head {
-                        font-size: 4.6rem;
-                        text-shadow: 0 0 5px #1CB5E0, 0 0 15px #1CB5E0, 0 0 20px #1CB5E0, 0 0 40px #1CB5E0, 0 0 60px #000046, 0 0 10px #1CB5E0, 0 0 98px #000046;
-                        color: #fff6a9;
-                        text-align: center;
-                        animation: blink 3s infinite;
-                        -webkit-animation: blink 3s infinite;
-                    }
-
-                    @-webkit-keyframes blink {
-                        20%,
-                        24%,
-                        55% {
-                        color: #111;
-                        text-shadow: none;
-                    }
-
-                    0%,
-                    19%,
-                    21%,
-                    23%,
-                    25%,
-                    54%,
-                    56%,
-                    100% {
-                        text-shadow: 0 0 5px #1CB5E0, 0 0 15px #1CB5E0, 0 0 20px , 0 0 40px #1CB5E0, 0 0 60px #000046, 0 0 10px #1CB5E0, 0 0 98px #000046;
-                        color: #fff6a9;
-                    }
-                    }
-
-                    @keyframes blink {
-                    20%,
-                    24%,
-                    55% {
-                    color: #111;
-                    text-shadow: none;
-                    }
-
-                    0%,
-                    19%,
-                    21%,
-                    23%,
-                    25%,
-                    54%,
-                    56%,
-                    100% {
-                        text-shadow: 0 0 5px #1CB5E0, 0 0 15px #1CB5E0, 0 0 20px #1CB5E0, 0 0 40px #1CB5E0, 0 0 60px #000046, 0 0 10px #1CB5E0, 0 0 98px #000046;
-                        color: #fff6a9;
-                    }
-                    }
-                    </style>
-                    We create brands, products, and experiences that people love. Check out our recent works.</h1> 
-                </div>
-            </div> 
-        <!-- end section-header -->
-
-        <div class="container">
-            <div class="row">
-              <div class="col-sm-8 col-sm-offset-2">
-                <!-- Galley wrapper that contains all items -->
-                <div id="gallery" class="gallery" itemscope itemtype="http://schema.org/ImageGallery">
-          
-                  <!-- Use figure for a more semantic html -->
-
-                  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                    <a href="http://glasscodeclub.com/" target="_blank" data-caption="Icelandic horses<br><em class='text-muted'>© Bethany Legg</em>" data-width="800" data-height="600" itemprop="contentUrl">
-                      <img src="images/Services1.png" class="image" itemprop="thumbnail" alt="Image description">
-                    </a>
-                  </figure>
-                  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                    <a href="https://glasscodeclub.github.io/portfolio/" target="_blank" data-caption="Sunset in the wheat field<br><em class='text-muted'>© Jordan McQueen</em>" data-width="800" data-height="600" itemprop="contentUrl">
-                      <img src="images/Portfolio1.png" class="image" itemprop="thumbnail" alt="Image description">
-                    </a>
-                  </figure>
-                  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                    <a href="https://glasscodeclub.github.io/harpreet/" target="_blank" data-caption="Mysterious ocean<br><em class='text-muted'>© Barn Images</em>" data-width="800" data-height="600" itemprop="contentUrl">
-                      <img src="images/Portfolio2.png" class="image" itemprop="thumbnail" alt="Image description">
-                    </a>
-                  </figure>
-                  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                    <a href="https://simarpreet7.github.io/" target="_blank" data-caption="Cloud over the mountains<br><em class='text-muted'>© James Pritchett</em>" data-width="800" data-height="600" itemprop="contentUrl">
-                      <img src="images/Portfolio3.png" class="image" itemprop="thumbnail" alt="Image description">
-                    </a>
-                  </figure>
-                  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                    <a href="http://glasscodeclub.com/" target="_blank" data-caption="Sea side, south shore<br><em class='text-muted'>© Julien Lavallée</em>" data-width="800" data-height="600" itemprop="contentUrl">
-                      <img src="images/Services2.png" class="image" itemprop="thumbnail" alt="Image description">
-                    </a>
-                  </figure>
-                  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                    <a href="http://weallchat.ml/" target="_blank" data-caption="Sunset on the highland road<br><em class='text-muted'>© Forrest Cavale</em>" data-width="800" data-height="600" itemprop="contentUrl">
-                      <img src="images/WeAllChat.png" class="image" itemprop="thumbnail" alt="Image description">
-                    </a>
-                  </figure>
-                  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                    <a href="http://glasscodeclub.com/" target="_blank" data-caption="Seljalandsfoss waterfall<br><em class='text-muted'>© Jeff Sheldon</em>" data-width="800" data-height="600" itemprop="contentUrl">
-                      <img src="images/e-commerce-solution.png" class="image" itemprop="thumbnail" alt="Image description">
-                    </a>
-                  </figure>
-                  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                    <a href="http://dtu-attendance.herokuapp.com" target="_blank" data-caption="Eerie wreckage of a crashed U.S. Navy aircraft<br><em class='text-muted'>© Jeff Sheldon</em>" data-width="800" data-height="600" itemprop="contentUrl">
-                      <img src="images/attendance.png" class="image" itemprop="thumbnail" alt="Image description">
-                    </a>
-                  </figure>
-                  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                    <a href="http://dtumeet.herokuapp.com/" target="_blank" data-caption="Fjadrarglufur canyon, south shore<br><em class='text-muted'>© Jeff Sheldon</em>" data-width="800" data-height="600" itemprop="contentUrl">
-                      <img src="images/meetscriber.png" class="image" itemprop="thumbnail" alt="Image description">
-                    </a>
-                  </figure>
-                  <!-- <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <figure
+                                itemprop="associatedMedia"
+                                itemscope
+                                itemtype="http://schema.org/ImageObject"
+                            >
+                                <div class="img__wrap">
+                                    <img
+                                        src="images/Services1.png"
+                                        class="image"
+                                        itemprop="thumbnail"
+                                        alt="Image description"
+                                    />
+                                    <p class="img__description">View Details</p>
+                                </div>
+                            </figure>
+                            <figure
+                                itemprop="associatedMedia"
+                                itemscope
+                                itemtype="http://schema.org/ImageObject"
+                            >
+                                <div class="img__wrap">
+                                    <img
+                                        src="images/Portfolio1.png"
+                                        class="image"
+                                        itemprop="thumbnail"
+                                        alt="Image description"
+                                    />
+                                    <p class="img__description">View Details</p>
+                                </div>
+                            </figure>
+                            <figure
+                                itemprop="associatedMedia"
+                                itemscope
+                                itemtype="http://schema.org/ImageObject"
+                            >
+                                <div class="img__wrap">
+                                    <img
+                                        src="images/Portfolio2.png"
+                                        class="image"
+                                        itemprop="thumbnail"
+                                        alt="Image description"
+                                    />
+                                    <p class="img__description">View Details</p>
+                                </div>
+                            </figure>
+                            <figure
+                                itemprop="associatedMedia"
+                                itemscope
+                                itemtype="http://schema.org/ImageObject"
+                            >
+                                <div class="img__wrap">
+                                    <img
+                                        src="images/Portfolio3.png"
+                                        class="image"
+                                        itemprop="thumbnail"
+                                        alt="Image description"
+                                    />
+                                    <p class="img__description">View Details</p>
+                                </div>
+                            </figure>
+                            <figure
+                                itemprop="associatedMedia"
+                                itemscope
+                                itemtype="http://schema.org/ImageObject"
+                            >
+                                <div class="img__wrap">
+                                    <img
+                                        src="images/Services2.png"
+                                        class="image"
+                                        itemprop="thumbnail"
+                                        alt="Image description"
+                                    />
+                                    <p class="img__description">View Details</p>
+                                </div>
+                            </figure>
+                            <figure
+                                itemprop="associatedMedia"
+                                itemscope
+                                itemtype="http://schema.org/ImageObject"
+                            >
+                                <div class="img__wrap">
+                                    <img
+                                        src="images/WeAllChat.png"
+                                        class="image"
+                                        itemprop="thumbnail"
+                                        alt="Image description"
+                                    />
+                                    <p class="img__description">View Details</p>
+                                </div>
+                            </figure>
+                            <figure
+                                itemprop="associatedMedia"
+                                itemscope
+                                itemtype="http://schema.org/ImageObject"
+                            >
+                                <div class="img__wrap">
+                                    <img
+                                        src="images/e-commerce-solution.png"
+                                        class="image"
+                                        itemprop="thumbnail"
+                                        alt="Image description"
+                                    />
+                                    <p class="img__description">View Details</p>
+                                </div>
+                            </figure>
+                            <figure
+                                itemprop="associatedMedia"
+                                itemscope
+                                itemtype="http://schema.org/ImageObject"
+                            >
+                                <div class="img__wrap">
+                                    <img
+                                        src="images/attendance.png"
+                                        class="image"
+                                        itemprop="thumbnail"
+                                        alt="Image description"
+                                    />
+                                    <p class="img__description">View Details</p>
+                                </div>
+                            </figure>
+                            <figure
+                                itemprop="associatedMedia"
+                                itemscope
+                                itemtype="http://schema.org/ImageObject"
+                            >
+                                <div class="img__wrap">
+                                    <img
+                                        src="images/meetscriber.png"
+                                        class="image"
+                                        itemprop="thumbnail"
+                                        alt="Image description"
+                                    />
+                                    <p class="img__description">View Details</p>
+                                </div>
+                            </figure>
+                            <!-- <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
                     <a href="https://unsplash.it/1200/900/?image=512" target="_blank" data-caption="Blue Lagoon<br><em class='text-muted'>© Jeff Sheldon</em>" data-width="800" data-height="600" itemprop="contentUrl">
                       <img src="images/portfolio/gallery/anuj-profile.JPG" class="image" itemprop="thumbnail" alt="Image description">
                     </a>
@@ -627,48 +1098,101 @@
                       <img src="images/portfolio/gallery/happy-clash-img.jpeg" class="image" itemprop="thumbnail" alt="Image description">
                     </a>
                   </figure> -->
+                        </div>
+                    </div>
                 </div>
-          
-              </div>
             </div>
-          </div>
-          
-          <style>
-            figure {
-                display: inline-block;
-                width: 33.333%;
-                float: left;
-                margin:0px !important;
-                padding: 9px;
-            }
-            .spacer {
-                height: 5em;
-            }
-            .image{
-                height: 209px  !important;
-                width: 339px  !important;
-            }
-            .image:hover {
-                filter: blur(1.9px);
-                -webkit-filter: blur(1.9px);
-            }
-            .image {
-            transition: .2s ease;
-            backface-visibility: hidden;
-            }
-          </style>
-    </section> 
-    <!-- end s-works -->
 
-    <!-- clients
+            <div class="container">
+                <a href="projects.html"><button>See all Projects</button></a>
+            </div>
+
+            <style>
+                figure {
+                    display: inline-block;
+                    width: 33.333%;
+                    float: left;
+                    margin: 0px !important;
+                    padding: 9px;
+                }
+                .spacer {
+                    height: 5em;
+                }
+                .image {
+                    height: 20vw !important;
+                    width: 25vw !important;
+                }
+                .img__wrap:hover .image {
+                    filter: blur(3px);
+                    -webkit-filter: blur(3px);
+                    opacity: 0.5;
+                }
+                .img__wrap .image {
+                    transition: 0.2s ease;
+                    backface-visibility: hidden;
+                }
+                .img__wrap {
+                    position: relative;
+                    height: 20vw;
+                    width: 25vw;
+                    cursor: pointer;
+                }
+                .img__description {
+                    position: absolute;
+                    top: 40%;
+                    bottom: 40%;
+                    left: 30%;
+                    right: 30%;
+                    height: 20%;
+                    width: 40%;
+                    padding-top: 0.5vw;
+                    text-align: center;
+                    background: transparent;
+                    color: #ccc;
+                    border: solid 3px #ccc;
+                    visibility: none;
+                    opacity: 0;
+
+                    /* transition effect. not necessary */
+                    transition: opacity 0.2s, visibility 0.2s;
+                }
+                .img__wrap:hover .img__description {
+                    visibility: visible;
+                    opacity: 1;
+                }
+
+                @media all and (max-width: 1200px) {
+                    .img__description {
+                        left: 20%;
+                        right: 20%;
+                        width: 60%;
+                        padding-top: 0.25vw;
+                    }
+                }
+                @media all and (max-width: 800px) {
+                    .img__description {
+                        left: 10%;
+                        right: 10%;
+                        top: 35%;
+                        bottom: 35%;
+                        height: 30%;
+                        width: 80%;
+                        padding-top: 0.25vw;
+                    }
+                }
+            </style>
+        </section>
+        <!-- end s-works -->
+
+        <!-- clients
     ================================================== -->
-    <!-- <section id="clients" class="s-clients target-section darker">
+        <!-- <section id="clients" class="s-clients target-section darker">
 
         <div class="grid-overlay">
             <div></div>
         </div>
 
-        <div class="row section-header text-center narrow" data-aos="fade-up">
+        <div class="row section-header text-center narrow" data-aos="fade-up" data-aos-duration="500">
             <div class="col-full">
                 <h3 class="subhead">Our Clients</h3>
                 <h1 class="display-1">Who we have work with</h1>
@@ -676,7 +1200,7 @@
         </div>  -->
         <!-- end section-header -->
 
-        <!-- <div class="row clients-wrap" data-aos="fade-up">
+        <!-- <div class="row clients-wrap" data-aos="fade-up" data-aos-duration="500">
             <div class="col-twelve">
                 <ul class="clients">
                     <li><a href="#0">Uber</a></li>
@@ -696,19 +1220,20 @@
         </div>
 
     </section>  -->
-    <!-- end s-clients -->
+        <!-- end s-clients -->
 
-
-    <!-- testimonies
+        <!-- testimonies
     ================================================== -->
-    <!-- <section class="s-testimonials">
-
-        <div class="testimonials__icon" data-aos="fade-up"></div>
-
+    <section class="s-testimonials">
+        <h3
+            class="subhead hvr-grow-shadow"
+            style="font-family: montserrat"
+        >
+            Testimonials
+        </h3>
+        <div class="testimonials__icon" data-aos="fade-up" data-aos-duration="500"></div>
         <div class="row testimonials narrow">
-
-            <div class="col-full testimonials__slider" data-aos="fade-up">
-
+            <div class="col-full testimonials__slider" data-aos="fade-up" data-aos-duration="500">
                 <div class="testimonials__slide">
                     <p>Qui ipsam temporibus quisquam vel. Maiores eos cumque distinctio nam accusantium ipsum. 
                     Laudantium quia consequatur molestias delectus culpa facere hic dolores aperiam. Accusantium quos qui praesentium corpori.</p>
@@ -716,60 +1241,90 @@
                         Tim Cook
                         <span>CEO, Apple</span>
                     </div>
-                </div>  -->
-                <!-- end testimonials__slide -->
-
-                <!-- <div class="testimonials__slide">
+                </div>
+                <div class="testimonials__slide">
                     <p>Excepturi nam cupiditate culpa doloremque deleniti repellat. Veniam quos repellat voluptas animi adipisci.
                     Nisi eaque consequatur. Quasi voluptas eius distinctio. Atque eos maxime. Qui ipsam temporibus quisquam vel.</p>
                     <div class="testimonials__author">
                         Sundar Pichai
                         <span>CEO, Google</span>
                     </div>
-                </div>  -->
-                <!-- end testimonials__slide -->
-
-                <!-- <div class="testimonials__slide">
+                </div>
+                <div class="testimonials__slide">
                     <p>Repellat dignissimos libero. Qui sed at corrupti expedita voluptas odit. Nihil ea quia nesciunt. Ducimus aut sed ipsam.  
                     Autem eaque officia cum exercitationem sunt voluptatum accusamus. Quasi voluptas eius distinctio.</p>
                     <div class="testimonials__author">
                         Satya Nadella
                         <span>CEO, Microsoft</span>
                     </div>
-                </div>  -->
-                <!-- end testimonials__slide -->
-                
-            <!-- </div>  -->
-            <!-- end testimonials__slider -->
-
-        <!-- </div>  -->
-        <!-- end testimonials -->
-
-    <!-- </section>  -->
-    <!-- end s-testimonials -->
-
-
-    <!-- contact
-    ================================================== -->
-    <section id="contact" class="s-contact target-section">
-
-        <div class="row section-header narrow" data-aos="fade-up">
-            <div class="col-full">
-                <h3 class="subhead" style="font-family: Roboto;">Stay In Touch</h3>
-                <h1 class="display-1" style="font-family: Roboto;">
-                    Feel free to contact us for any <br> project idea or collaboration</h1>
+                </div>
             </div>
-        </div> 
-        <!-- end section-header -->
+        </div>
+    </section> 
+        <!-- end s-testimonials -->
 
-        <div class="row contact-main" data-aos="fade-up">
-            <div class="col-full">
-                <p class="contact-email">
-                   
-                    <a href="mailto:#0" style="font-family: Roboto;">glasscodeclub@gmail.com</a>
-                </p>
 
-                <!-- <p class="contact-address">
+        <!-- contact
+    ================================================== -->
+        <section id="contact" class="s-contact target-section">
+            <div
+                class="row section-header narrow"
+                data-aos="fade-up"
+                data-aos-duration="500"
+            >
+                <div class="col-full">
+                    <h3 class="subhead" style="font-family: Roboto">
+                        Stay In Touch
+                    </h3>
+                    <h1 class="display-1" style="font-family: Roboto">
+                        Feel free to contact us for any <br />
+                        project idea or collaboration
+                    </h1>
+
+                    <form id="contact-form">
+                        <input
+                            type="text"
+                            name="name"
+                            placeholder="Name"
+                            required
+                        />
+                        <input
+                            type="email"
+                            name="email"
+                            placeholder="Email"
+                            required
+                        />
+                        <input
+                            type="text"
+                            name="subject"
+                            placeholder="Subject"
+                            required
+                        />
+                        <textarea
+                            name="message"
+                            placeholder="Message"
+                            required
+                        ></textarea>
+                        <p id="form-status"></p>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+            <!-- end section-header -->
+
+            <div
+                class="row contact-main"
+                data-aos="fade-up"
+                data-aos-duration="500"
+            >
+                <div class="col-full">
+                    <!-- <p class="contact-email">
+                        <a href="mailto:#0" style="font-family: Roboto"
+                            >glasscodeclub@gmail.com</a
+                        >
+                    </p> -->
+
+                    <!-- <p class="contact-address">
                 1600 Amphitheatre Parkway <br>
                 Mountain View, CA, 94043 US 
                 </p>
@@ -777,93 +1332,126 @@
                 +1 (917) 123 456 &nbsp; +1 (917) 333 987
                 </p> -->
 
-                <ul class="contact-social">
-                    <li>
-                        <a href="https://www.facebook.com/glasscodeclub" target="_blank"><i class="fab fa-facebook hvr-grow-shadow"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/glasscodeclub" target="_blank"><i class="fab fa-github hvr-grow-shadow"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/glasscodeclub/" target="_blank"><i class="fab fa-instagram hvr-grow-shadow"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/glasscode-club-633645202?" target="_blank">
-                            <i class="fab fa-linkedin hvr-grow-shadow"></i></a>
-                    </li>
-                </ul>
+                    <ul class="contact-social">
+                        <li>
+                            <a
+                                href="https://www.facebook.com/glasscodeclub"
+                                target="_blank"
+                                ><i class="fab fa-facebook hvr-grow-shadow"></i
+                            ></a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://github.com/glasscodeclub"
+                                target="_blank"
+                                ><i class="fab fa-github hvr-grow-shadow"></i
+                            ></a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://www.instagram.com/glasscodeclub/"
+                                target="_blank"
+                                ><i class="fab fa-instagram hvr-grow-shadow"></i
+                            ></a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://www.linkedin.com/in/glasscode-club-633645202?"
+                                target="_blank"
+                            >
+                                <i class="fab fa-linkedin hvr-grow-shadow"></i
+                            ></a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
+        </section>
+        <!-- end s-contact -->
 
-    </section> 
-    <!-- end s-contact -->
-
-
-    <!-- footer
+        <!-- footer
     ================================================== -->
-    <footer>
-        <div class="row">
-            <div class="col-full ss-copyright">
-                <span style="color: #fff; font-family: roboto;">© Copyright GlassCode Club 2021</span> 
-                <!-- <span>Design by <a href="https://www.styleshout.com/">Styleshout</a></span> -->
-                <!-- <span>Re-Distributed by <a href="https://www.themewagon.com/">ThemeWagon</a></span> -->
+        <footer>
+            <div class="row">
+                <div class="col-full ss-copyright">
+                    <span style="color: #fff; font-family: roboto"
+                        >© Copyright GlassCode Club 2021</span
+                    >
+                    <!-- <span>Design by <a href="https://www.styleshout.com/">Styleshout</a></span> -->
+                    <!-- <span>Re-Distributed by <a href="https://www.themewagon.com/">ThemeWagon</a></span> -->
+                </div>
             </div>
-        </div>
 
-        <div class="ss-go-top">
-            <a class="smoothscroll button" title="Back to Top" href="#top">
-                Back to Top</a>
-        </div>
-    </footer>
+            <div class="ss-go-top">
+                <a class="smoothscroll button" title="Back to Top" href="#top">
+                    Back to Top</a
+                >
+            </div>
+        </footer>
 
-
-    <!-- photoswipe background
+        <!-- photoswipe background
     ================================================== -->
-    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+        <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+            <div class="pswp__bg"></div>
+            <div class="pswp__scroll-wrap">
+                <div class="pswp__container">
+                    <div class="pswp__item"></div>
+                    <div class="pswp__item"></div>
+                    <div class="pswp__item"></div>
+                </div>
 
-        <div class="pswp__bg"></div>
-        <div class="pswp__scroll-wrap">
-
-            <div class="pswp__container">
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
-            </div>
-
-            <div class="pswp__ui pswp__ui--hidden">
-                <div class="pswp__top-bar">
-                    <div class="pswp__counter"></div>
-                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button> 
-                    <button class="pswp__button pswp__button--share" title="Share"></button> 
-                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> 
-                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-                    <div class="pswp__preloader">
-                        <div class="pswp__preloader__icn">
-                            <div class="pswp__preloader__cut">
-                                <div class="pswp__preloader__donut">
+                <div class="pswp__ui pswp__ui--hidden">
+                    <div class="pswp__top-bar">
+                        <div class="pswp__counter"></div>
+                        <button
+                            class="pswp__button pswp__button--close"
+                            title="Close (Esc)"
+                        ></button>
+                        <button
+                            class="pswp__button pswp__button--share"
+                            title="Share"
+                        ></button>
+                        <button
+                            class="pswp__button pswp__button--fs"
+                            title="Toggle fullscreen"
+                        ></button>
+                        <button
+                            class="pswp__button pswp__button--zoom"
+                            title="Zoom in/out"
+                        ></button>
+                        <div class="pswp__preloader">
+                            <div class="pswp__preloader__icn">
+                                <div class="pswp__preloader__cut">
+                                    <div class="pswp__preloader__donut"></div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                    <div class="pswp__share-tooltip">
+                    <div
+                        class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap"
+                    >
+                        <div class="pswp__share-tooltip"></div>
                     </div>
-                </div>
-                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> 
-                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
-                <div class="pswp__caption">
-                    <div class="pswp__caption__center">
+                    <button
+                        class="pswp__button pswp__button--arrow--left"
+                        title="Previous (arrow left)"
+                    ></button>
+                    <button
+                        class="pswp__button pswp__button--arrow--right"
+                        title="Next (arrow right)"
+                    ></button>
+                    <div class="pswp__caption">
+                        <div class="pswp__caption__center"></div>
                     </div>
                 </div>
             </div>
         </div>
-    </div> 
-    <!-- end photoSwipe background -->
-    <!-- Java Script
+        <!-- end photoSwipe background -->
+        <!-- Java Script
     ================================================== -->
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
-
-</body>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+        <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/mail.js"></script>
+    </body>
+</html>

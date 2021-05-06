@@ -1,0 +1,68 @@
+[
+	{
+		"img": "images/Portfolio1.png",
+		"url": "https://glasscodeclub.github.io/portfolio",
+		"title": "Portfolio 1",
+		"desc": "Want your own personal or professional portfolio? We can craft that for you with our qualified design and development team to make sure your profile looks top-notch! Customized Portfolios enables you to attract more clients and increases your target audience."
+	},
+	{
+		"img": "images/Services1.png",
+		"url": "#",
+		"title": "Pamphlet Design",
+		"desc": "Our design proficiency expand to areas like, designing brochures, flyers or pamphlets for advertisements or marketing, etc. We design brochures with our team's creativity and skillfulness. All the years of knowledge and experience in the field have made us a sought-after organization."
+	},
+	{
+		"img": "images/Portfolio2.png",
+		"url": "https://glasscodeclub.github.io/harpreet",
+		"title": "Portfolio 2",
+		"desc": "Want your own personal or professional portfolio? We can craft that for you with our qualified design and development team to make sure your profile looks top-notch! Customized Portfolios enables you to attract more clients and increases your target audience."
+	},
+	{
+		"img": "images/Portfolio3.png",
+		"url": "https://simarpreet7.github.io/",
+		"title": "Portfolio 3",
+		"desc": "Want your own personal or professional portfolio? We can craft that for you with our qualified design and development team to make sure your profile looks top-notch! Customized Portfolios enables you to attract more clients and increases your target audience."
+	},
+	{
+		"img": "images/Services2.png",
+		"url": "#",
+		"title": "Logo Design",
+		"desc": "Every Business should have a face. This face helps in building brand image and values. With our expertise, every logo that we make carries a story which develops after a deep study of company or a product. We can create an identity that your business needs."
+	},
+	{
+		"img": "images/WeAllChat.png",
+		"url": "http://weallchat.ml/",
+		"title": "We All Chat",
+		"desc": "Does your company requires a chat application to work with your employees and stay even more connected. For that, our speciallized team created a custom chat application called 'We All Chat'. This application is easy and simple to use just like you use WhatsApp."
+	},
+	{
+		"img": "images/e-commerce-solution.png",
+		"url": "#",
+		"title": "E-commerce",
+		"desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+	},
+	{
+		"img": "images/attendance.png",
+		"url": "http://dtu-attendance.herokuapp.com/",
+		"title": "Attendance",
+		"desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+	},
+	{
+		"img": "images/meetscriber.png",
+		"url": "http://dtumeet.herokuapp.com/",
+		"title": "Meetscriber",
+		"desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+	},
+	{
+		"img": "images/custom_compiler.png",
+		"url": "https://drive.google.com/file/d/17dfqPlUP61DDrvwxFbkQVNaFjFR7uxeX/view?usp=sharing",
+		"title": "Custom Compiler",
+		"desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+	},
+	{
+		"img": "images/sharedocs.png",
+		"url": "https://drive.google.com/file/d/1FfWXwBhD67qzwA_J-XwTPp1cn6G2n8ct/view?usp=sharing",
+		"title": "Sharedocs",
+		"desc": "You can work with your teams together with this custom made document sharing platform. Live sharing, editing, creating new documents and presenting them with your teams made easy and simple."
+	}
+]

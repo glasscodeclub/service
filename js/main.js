@@ -174,7 +174,7 @@
     var ssSlickSlider = function() {
         
         $('.testimonials__slider').slick({
-            arrows: false,
+            arrows: true,
             dots: true,
             infinite: true,
             slidesToShow: 1,
@@ -255,4 +255,50 @@
 
     })();
 
+    // ===========Modal==========
+
+    // console.log(window.innerWidth);
+    if(window.innerWidth/window.devicePixelRatio > 768){
+        let target;
+        let data = $.getJSON('../data.json');
+        $('.img__wrap').on('click', (e) => {
+            target = e.currentTarget.children[0].src;
+            // console.log(target);
+            // console.log(data.responseJSON);
+            // console.log(window.location)
+            data.responseJSON.map(details => {
+                if(details.title){
+                    let url = window.location.protocol + '//' + window.location.host + '/' +details.img
+                    if(target === url){
+                        $('.modal-img').html(`<img src="${details.img}" alt="">`);
+                        $('.modal-desc').html(`
+                            <h2>${details.title} <span><a href="${details.url}">View Project</a></span></h2>
+                            <p>${details.desc}</p>
+                        `);
+                        $('.modal-img img').css("margin", "2vh 25% 0");
+                        $('.modal-img img').css("width", "50%");
+                        $('.modal-img img').css("heigth", "50%");
+                    }
+                }
+                else {
+                    let url = window.location.protocol + '//' + window.location.host + '/' +details.img
+                    if(target === url){
+                        $('.modal-img').html(`<img src="${details.img}" alt="">`);
+                        $('.modal-img img').css("margin", "2vh 10%");
+                        $('.modal-img img').css("width", "80%");
+                        $('.modal-img img').css("heigth", "80%");
+                    }
+                }
+            })
+            $('.modal').show();
+        });
+
+        $('.close').on('click', (e) => {
+            $('.modal-img').html('');
+            $('.modal-desc').html('');
+            $('.modal').hide();
+        })
+    }
+
 })(jQuery);
+
